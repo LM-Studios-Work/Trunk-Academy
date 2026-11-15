@@ -4,7 +4,6 @@ import { SiteHeader } from "@/components/site-header";
 const photos = {
   hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225637-MuFDLtdO6GhhbpIsx1qvGvJwhUDhWA.png",
   friends: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225703-8mb6VUFGZaRGQ5fwOLVRjK63Q3dYqz.png",
-  play: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JDekNV4NDF6slmw2iKXFEFiJXJDyJh.png",
 };
 
 const facts = [
@@ -60,7 +59,7 @@ export default function Home() {
 
       <section className="play-section">
         <div className="play-copy"><p className="eyebrow">Room to explore</p><h2>Curiosity has<br />a place to grow.</h2><p>From first friendships to new discoveries, we make space for children to explore the world around them — one day at a time.</p><a className="text-link" href="#contact">Explore life at Trunk</a></div>
-        <div className="play-image"><Image src={photos.play} alt="Young children enjoying a playful, creative activity" fill sizes="(max-width: 700px) 100vw, 55vw" /></div>
+        <div className="play-type" aria-hidden="true"><span>Play.</span><span>Learn.</span><span>Belong.</span></div>
       </section>
 
       <section className="cta-section" id="contact"><span id="admissions" /><p className="eyebrow">Your next step starts with a hello</p><h2>Let’s find out if<br />Trunk feels like home.</h2><p>We’d love to welcome your family and answer your questions.</p><a className="button button-light" href="#welcome">Meet the team</a><span className="cta-note">Trunk Academy Babyhouse & Preschool, Cosmo City, Randburg</span></section>
