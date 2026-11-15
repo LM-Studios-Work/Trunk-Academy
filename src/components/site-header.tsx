@@ -13,13 +13,12 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="#home" aria-label="Trunk Academy home">
-        <span className="brand-mark" aria-hidden="true">T</span>
         <span className="brand-name">TRUNK<br />ACADEMY</span>
       </Link>
       <nav aria-label="Main navigation" className="main-nav">
         {navigation.map(([label, href]) => <Link href={href} key={label}>{label}</Link>)}
       </nav>
-      <a className="header-cta" href="#contact">Come say hello <span aria-hidden="true">↗</span></a>
+      <a className="header-cta" href="#contact">Come say hello</a>
     </header>
   );
 }

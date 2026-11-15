@@ -4,12 +4,13 @@
 Trunk Academy Babyhouse & Preschool is a play-based crèche and early learning centre in Cosmo City, Randburg, Johannesburg, serving children from 3 months to 5 years. The site should communicate the warmth of a real local school and make practical information easy to find. Do not invent outcomes, accreditations, reviews, staff credentials, policies, or contact details.
 
 ## Visual direction
-- **Mood:** welcoming, quietly playful, human, contemporary; editorial composition rather than a generic childcare template.
+- **Mood:** welcoming, quietly playful, human, contemporary; editorial composition rather than a generic childcare template. Follow the supplied Luna Goods reference’s uncluttered, typography-led section rhythm.
 - **Palette:** warm white `#FFFCF7`, soft peach `#F5D9C3`, muted butter `#F4D88B`, deep espresso `#321E14`, and quiet clay `#AA6845` for small accents.
 - **Typography:** geometric sans-serif; bold, tightly set headlines and readable regular-weight body copy. Keep type hierarchy clear and avoid decorative display fonts.
 - **Photography:** use the supplied child photography with generous crops and meaningful alt text. Keep the images prominent and authentic; avoid decorative stock imagery or unsupported captions.
-- **Surfaces:** broad white and peach fields with clear section breaks, restrained borders, and soft corner radii. Avoid excessive cards, shadows, and ornamental elements.
-- **Controls:** pill-shaped, high-contrast links and buttons with visible text; clear hover/focus states and keyboard access.
+- **Surfaces:** broad white and peach fields with clear section breaks. Separate grid items with generous whitespace only; do not use thin divider rules, decorative lines, bullets, circles, numbered cards, or generic icons.
+- **Typography:** create hierarchy through type size, weight, and alignment only. Eyebrows and copy begin directly with text, without leading symbols.
+- **Controls:** pill-shaped, high-contrast links and buttons with visible text; clear hover/focus states and keyboard access. Avoid decorative arrow glyphs.
 
 ## Homepage structure
 1. Shared site header with the complete primary navigation: Home, Programmes, Nutrition & Safety, Admissions, Contact, Partners & Donors. Future routes should reuse this header and design tokens.
