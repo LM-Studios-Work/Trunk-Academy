@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { HomeDiscoverySection } from "@/components/home-discovery-section";
 
 const photos = {
   hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225637-MuFDLtdO6GhhbpIsx1qvGvJwhUDhWA.png",
@@ -31,7 +33,7 @@ export default function Home() {
           <p className="hero-intro">A warm, play-based place to learn, belong and grow — from the very beginning.</p>
           <div className="hero-actions">
             <a className="button button-dark" href="#welcome">Meet Trunk Academy</a>
-            <a className="text-link" href="#our-home">Get to know us</a>
+            <Link className="text-link" href="/programmes">Explore our programmes</Link>
           </div>
         </div>
         <div className="hero-image-wrap">
@@ -41,7 +43,7 @@ export default function Home() {
       </section>
 
       <section className="facts-section" id="nutrition-safety" aria-label="At a glance">
-        <div className="facts-heading"><p className="eyebrow">The little details</p><h2>Care that fits<br />real family life.</h2></div>
+        <div className="facts-heading"><p className="eyebrow">The little details</p><h2>Care that fits<br />real family life.</h2><Link className="text-link facts-link" href="/nutrition-safety">Learn about nutrition &amp; safety</Link></div>
         <dl className="facts-grid">{facts.map(([label, value]) => <div className="fact" key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
       </section>
 
@@ -55,12 +57,14 @@ export default function Home() {
         <div className="reasons-grid">{reasons.map(({ title, text }) => <article className="reason-card" key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
 
+      <HomeDiscoverySection />
+
       <section className="play-section">
         <div className="play-copy"><p className="eyebrow">Room to explore</p><h2>Curiosity has<br />a place to grow.</h2><p>From first friendships to new discoveries, we make space for children to explore the world around them — one day at a time.</p><a className="text-link" href="#contact">Explore life at Trunk</a></div>
         <div className="play-type" aria-hidden="true"><span>Play.</span><span>Learn.</span><span>Belong.</span></div>
       </section>
 
-      <section className="cta-section" id="contact"><span id="admissions" /><p className="eyebrow">Your next step starts with a hello</p><h2>Let’s find out if<br />Trunk feels like home.</h2><p>We’d love to welcome your family and answer your questions.</p><a className="button button-light" href="#welcome">Meet the team</a><span className="cta-note">Trunk Academy Babyhouse & Preschool, Cosmo City, Randburg</span></section>
+      <section className="cta-section" id="contact"><span id="admissions" /><p className="eyebrow">Your next step starts with a hello</p><h2>Let’s find out if<br />Trunk feels like home.</h2><p>We’d love to welcome your family and answer your questions. Visit our <Link className="cta-inline-link" href="/admissions">admissions page</Link> to take the next step.</p><a className="button button-light" href="#welcome">Meet the team</a><span className="cta-note">Trunk Academy Babyhouse & Preschool, Cosmo City, Randburg</span></section>
     </main>
   );
 }
