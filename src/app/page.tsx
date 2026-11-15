@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { SiteHeader } from "@/components/site-header";
 
 const photos = {
   hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225637-MuFDLtdO6GhhbpIsx1qvGvJwhUDhWA.png",
@@ -25,7 +24,6 @@ const reasons = [
 export default function Home() {
   return (
     <main>
-      <SiteHeader />
       <section className="hero" id="home">
         <div className="hero-copy">
           <p className="eyebrow">A babyhouse & preschool in Cosmo City</p>
@@ -63,8 +61,6 @@ export default function Home() {
       </section>
 
       <section className="cta-section" id="contact"><span id="admissions" /><p className="eyebrow">Your next step starts with a hello</p><h2>Let’s find out if<br />Trunk feels like home.</h2><p>We’d love to welcome your family and answer your questions.</p><a className="button button-light" href="#welcome">Meet the team</a><span className="cta-note">Trunk Academy Babyhouse & Preschool, Cosmo City, Randburg</span></section>
-
-      <footer className="site-footer"><a className="brand footer-brand" href="#home"><span className="brand-name">TRUNK<br />ACADEMY</span></a><p>Little beginnings, cared for with love.</p><a href="#home" className="footer-top">Back to top</a><span className="footer-copy">© {new Date().getFullYear()} Trunk Academy</span></footer>
     </main>
   );
 }
