@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdmissionsPage } from "@/components/admissions-page";
 import { NutritionSafetyPage } from "@/components/nutrition-safety-page";
 
 const placeholderPages = [
@@ -37,6 +38,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const page = placeholderPages.find((item) => item.slug === slug);
 
+  if (slug === "admissions") {
+    return {
+      title: "Admissions & Enrolment | Trunk Academy",
+      description: "Find out how to enrol at Trunk Academy, review fees and policies, and ask about availability or a visit.",
+    };
+  }
+
   if (slug === "nutrition-safety") {
     return {
       title: "Nutrition, Health & Safety | Trunk Academy",
@@ -57,6 +65,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function PlaceholderPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const page = placeholderPages.find((item) => item.slug === slug);
+
+  if (slug === "admissions") return <AdmissionsPage />;
 
   if (slug === "nutrition-safety") return <NutritionSafetyPage />;
 

@@ -165,6 +165,37 @@ a { color: inherit; text-decoration: none; }
 .nutrition-contact h2 { max-width: 15ch; font-size: clamp(38px, 5.5vw, 68px); }
 .nutrition-contact .button { flex: none; }
 
+.admissions-page { background: var(--paper); }
+.admissions-hero { display: grid; grid-template-columns: 1.05fr .95fr; align-items: end; gap: 8%; padding: 92px 10% 82px; background: var(--peach); }
+.admissions-hero .eyebrow { margin-bottom: 24px; }
+.admissions-hero h1, .admissions-cta h2 { margin: 0; font-size: clamp(58px, 6.8vw, 86px); font-weight: 850; letter-spacing: -.075em; line-height: .9; }
+.admissions-hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 25px; padding-bottom: 5px; }
+.admissions-hero-copy > p { max-width: 34ch; margin: 0; color: #584235; font-size: 17px; line-height: 1.8; }
+.admissions-hero-copy .button { min-height: 48px; }
+.admissions-photo { position: relative; min-height: clamp(350px, 43vw, 560px); overflow: hidden; background: #877866; }
+.admissions-photo img { object-fit: cover; object-position: center 54%; }
+.admissions-steps { padding: 104px 10%; }
+.admissions-section-heading { display: grid; grid-template-columns: .9fr 1.1fr; align-items: end; gap: 8%; margin-bottom: 58px; }
+.admissions-section-heading .eyebrow, .admissions-fees-heading .eyebrow, .admissions-faq-heading .eyebrow { margin-bottom: 20px; }
+.admissions-section-heading h2, .admissions-fees-heading h2, .admissions-faq-heading h2 { max-width: 12ch; margin: 0; font-size: clamp(44px, 5.4vw, 70px); font-weight: 850; letter-spacing: -.07em; line-height: .93; }
+.admissions-section-heading > p { max-width: 37ch; margin: 0 0 5px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.admissions-section-heading > p a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.admissions-steps-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px; margin: 0; padding: 0; list-style: none; }
+.admissions-steps-grid h3, .admissions-policy-grid h3, .admissions-faq-grid h3 { margin: 0 0 12px; font-size: 18px; font-weight: 750; letter-spacing: -.04em; }
+.admissions-steps-grid p, .admissions-policy-grid p, .admissions-faq-grid p { max-width: 32ch; margin: 0; color: #5e493c; font-size: 13px; line-height: 1.8; }
+.admissions-fees { display: grid; grid-template-columns: .72fr 1.28fr; gap: 8%; padding: 100px 10%; background: var(--butter); }
+.admissions-fees-heading { align-self: start; }
+.admissions-fees-heading h2, .admissions-faq-heading h2 { font-size: clamp(42px, 5vw, 64px); }
+.admissions-fees-heading > p:not(.eyebrow) { max-width: 32ch; margin: 23px 0 0; color: #5e493c; font-size: 13px; line-height: 1.8; }
+.admissions-fees-heading .text-link { margin-top: 15px; color: var(--ink); font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
+.admissions-policy-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 42px; }
+.admissions-faq { display: grid; grid-template-columns: .72fr 1.28fr; gap: 8%; padding: 100px 10%; }
+.admissions-faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 42px; }
+.admissions-cta { display: flex; align-items: end; justify-content: space-between; gap: 40px; padding: 82px 10%; background: var(--ink); color: var(--paper); }
+.admissions-cta .eyebrow { margin-bottom: 22px; color: #e2b99b; }
+.admissions-cta h2 { font-size: clamp(48px, 6vw, 76px); }
+.admissions-cta .button { flex: none; max-width: 100%; text-align: center; }
+
 .site-footer { display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 44px 8%; padding: 58px 8% 25px; background: var(--paper); border-top: 1px solid #e8ded2; }
 .footer-brand-block { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .footer-brand-block p { max-width: 190px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
@@ -189,8 +220,10 @@ a { color: inherit; text-decoration: none; }
   .reasons-grid { column-gap: 22px; }
   .reason-card h3 { font-size: 14px; }
   .programme-options, .teaching-approach, .whole-child, .school-readiness, .nutrition-meals, .nutrition-care { padding-inline: 7%; }
-  .nutrition-intro { padding-inline: 7%; }
+  .nutrition-intro, .admissions-hero, .admissions-steps, .admissions-fees, .admissions-faq, .admissions-cta { padding-inline: 7%; }
   .nutrition-care { grid-template-columns: .75fr 1.25fr; gap: 5%; }
+  .admissions-steps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 42px; }
+  .admissions-fees, .admissions-faq { gap: 5%; }
   .programme-options-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px; }
 }
 
@@ -260,6 +293,19 @@ a { color: inherit; text-decoration: none; }
   .care-practices-grid { gap: 30px 18px; }
   .nutrition-contact { flex-direction: column; align-items: flex-start; gap: 30px; padding: 64px 7%; }
   .nutrition-contact h2 { font-size: clamp(38px, 9.5vw, 52px); }
+  .admissions-hero { grid-template-columns: 1fr; gap: 28px; padding: 64px 7% 52px; }
+  .admissions-hero h1 { font-size: clamp(47px, 12vw, 62px); }
+  .admissions-hero-copy > p { font-size: 15px; }
+  .admissions-photo { min-height: clamp(320px, 100vw, 390px); }
+  .admissions-steps, .admissions-fees, .admissions-faq { padding: 64px 7%; }
+  .admissions-section-heading, .admissions-fees, .admissions-faq { grid-template-columns: 1fr; gap: 34px; }
+  .admissions-section-heading { margin-bottom: 38px; }
+  .admissions-section-heading h2, .admissions-fees-heading h2, .admissions-faq-heading h2 { font-size: clamp(40px, 10.5vw, 54px); }
+  .admissions-steps-grid, .admissions-policy-grid, .admissions-faq-grid { grid-template-columns: 1fr; gap: 30px; }
+  .admissions-steps-grid h3, .admissions-policy-grid h3, .admissions-faq-grid h3 { margin-bottom: 8px; font-size: 17px; }
+  .admissions-cta { flex-direction: column; align-items: flex-start; gap: 30px; padding: 64px 7%; }
+  .admissions-cta h2 { font-size: clamp(44px, 10vw, 58px); }
+  .admissions-cta .button { align-self: flex-start; }
   .eyebrow { font-weight: 800; }
   .text-link { font-weight: 800; }
   .hero .eyebrow { margin-bottom: 18px; }
