@@ -32,7 +32,7 @@ export default function Home() {
           <h1>A happy start<br />for little ones.</h1>
           <p className="hero-intro">A warm, play-based place to learn, belong and grow from the very beginning.</p>
           <div className="hero-actions">
-            <Link className="button button-dark" href="/about" aria-label="Meet Trunk Academy"><span className="button-label">Meet Trunk Academy</span><span className="button-arrow" aria-hidden="true">→</span></Link>
+            <Link className="button button-dark" href="#welcome" aria-label="Meet Trunk Academy"><span className="button-label">Meet Trunk Academy</span><span className="button-arrow" aria-hidden="true">→</span></Link>
             <Link className="text-link" href="/programmes">Explore our programmes</Link>
           </div>
         </div>
