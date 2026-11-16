@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -58,9 +59,15 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
             <h1>Learning starts<br />with play.</h1>
             <p>Play-based early learning for babies, toddlers and preschoolers, from Babyhouse to Grade RR.</p>
           </div>
-          <div className="programmes-hero-note">
-            <span>Programmes &amp; Curriculum</span>
-            <p>Care and learning shaped around the way young children discover the world.</p>
+          <div className="programmes-hero-image">
+            <Image
+              src="/images/trunk-learning-moment.png"
+              alt="Children sharing an outdoor play and learning moment with blocks and leaves"
+              fill
+              priority
+              sizes="(max-width: 700px) 100vw, 50vw"
+            />
+            <p>Learning through play, every day.</p>
           </div>
         </section>
 
