@@ -196,6 +196,53 @@ a { color: inherit; text-decoration: none; }
 .admissions-cta h2 { font-size: clamp(48px, 6vw, 76px); }
 .admissions-cta .button { flex: none; max-width: 100%; text-align: center; }
 
+.contact-page, .partnerships-page { background: var(--paper); }
+.contact-hero { display: grid; grid-template-columns: 1.05fr .95fr; align-items: end; gap: 8%; padding: 92px 10% 82px; background: var(--peach); }
+.contact-hero .eyebrow { margin-bottom: 24px; }
+.contact-hero h1, .partnerships-hero h1 { margin: 0; font-size: clamp(58px, 7.2vw, 92px); font-weight: 850; letter-spacing: -.075em; line-height: .9; }
+.contact-hero h1 { font-size: clamp(54px, 5.4vw, 68px); }
+.contact-hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding-bottom: 5px; }
+.contact-hero-copy p { max-width: 34ch; margin: 0; color: #584235; font-size: 16px; line-height: 1.75; }
+.contact-hero-copy p:first-child { font-size: 19px; }
+.contact-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px 9%; padding: 100px 10%; }
+.contact-details .eyebrow { margin: 0 0 18px; }
+.contact-details h2 { max-width: 30ch; margin: 0; font-size: clamp(23px, 2.5vw, 32px); font-weight: 750; letter-spacing: -.05em; line-height: 1.2; overflow-wrap: anywhere; }
+.contact-details h2 a:hover, .contact-detail-link:hover { color: var(--clay); }
+.contact-details address { color: var(--ink); font-size: 16px; font-style: normal; line-height: 1.75; }
+.contact-detail-link { display: inline-block; margin-top: 13px; color: var(--ink); font-size: 13px; font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
+.contact-hours { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+.contact-cta, .partnerships-cta { display: flex; align-items: end; justify-content: space-between; gap: 40px; padding: 82px 10%; background: var(--ink); color: var(--paper); }
+.contact-cta .eyebrow, .partnerships-cta .eyebrow { margin-bottom: 22px; color: #e2b99b; }
+.contact-cta h2, .partnerships-cta h2 { margin: 0; font-size: clamp(48px, 6vw, 76px); font-weight: 850; letter-spacing: -.07em; line-height: .93; }
+.contact-cta .button, .partnerships-cta .button { flex: none; max-width: 100%; text-align: center; }
+.partnerships-hero { padding: 82px 10% 92px; background: var(--butter); }
+.partnerships-hero > .eyebrow { margin-bottom: 38px; }
+.partnerships-hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: end; gap: 8%; }
+.partnerships-hero h1 { font-size: clamp(54px, 6vw, 72px); }
+.partnerships-hero-grid > p { max-width: 34ch; margin: 0 0 6px; color: #584235; font-size: 18px; line-height: 1.8; }
+.partnerships-why { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); color: var(--paper); }
+.partnerships-photo { position: relative; min-height: 520px; overflow: hidden; background: #877866; }
+.partnerships-photo img { object-fit: cover; object-position: center 53%; }
+.partnerships-why-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 80px 13%; }
+.partnerships-why-copy .eyebrow { margin-bottom: 20px; color: #e2b99b; }
+.partnerships-why-copy h2, .partnerships-donation-intro h2 { max-width: 13ch; margin: 0; font-size: clamp(42px, 5vw, 64px); font-weight: 850; letter-spacing: -.07em; line-height: .93; }
+.partnerships-why-copy > p:last-child { max-width: 40ch; margin: 24px 0 0; color: #e3d1c3; font-size: 14px; line-height: 1.85; }
+.partnerships-ways { padding: 100px 10%; }
+.partnerships-section-heading { display: grid; grid-template-columns: .8fr 1.2fr; align-items: end; gap: 8%; margin-bottom: 58px; }
+.partnerships-section-heading .eyebrow { margin: 0 0 20px; }
+.partnerships-section-heading h2 { max-width: 15ch; margin: 0; font-size: clamp(42px, 5.2vw, 68px); font-weight: 850; letter-spacing: -.07em; line-height: .93; }
+.partnerships-ways-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 42px 7%; }
+.partnerships-ways-grid h3 { margin: 0 0 12px; font-size: 19px; font-weight: 750; letter-spacing: -.04em; }
+.partnerships-ways-grid p { max-width: 32ch; margin: 0; color: #5e493c; font-size: 13px; line-height: 1.8; }
+.partnerships-donation { display: grid; grid-template-columns: .9fr 1.1fr; gap: 8%; padding: 100px 10%; background: var(--peach); }
+.partnerships-donation-intro .eyebrow { margin: 0 0 20px; }
+.partnerships-donation-intro > p:not(.eyebrow) { max-width: 37ch; margin: 23px 0 0; color: #584235; font-size: 14px; line-height: 1.8; }
+.partnerships-donation-intro .text-link { margin-top: 14px; color: var(--ink); font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
+.donation-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; gap: 34px 38px; margin: 0; }
+.donation-details dt { margin: 0 0 8px; color: var(--clay); font-size: 10px; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+.donation-details dd { margin: 0; color: var(--ink); font-size: 15px; line-height: 1.65; overflow-wrap: anywhere; }
+.partnerships-cta h2 { font-size: clamp(54px, 6.5vw, 82px); }
+
 .site-footer { display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 44px 8%; padding: 58px 8% 25px; background: var(--paper); border-top: 1px solid #e8ded2; }
 .footer-brand-block { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .footer-brand-block p { max-width: 190px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
@@ -220,10 +267,12 @@ a { color: inherit; text-decoration: none; }
   .reasons-grid { column-gap: 22px; }
   .reason-card h3 { font-size: 14px; }
   .programme-options, .teaching-approach, .whole-child, .school-readiness, .nutrition-meals, .nutrition-care { padding-inline: 7%; }
-  .nutrition-intro, .admissions-hero, .admissions-steps, .admissions-fees, .admissions-faq, .admissions-cta { padding-inline: 7%; }
+  .nutrition-intro, .admissions-hero, .admissions-steps, .admissions-fees, .admissions-faq, .admissions-cta, .contact-hero, .contact-details, .contact-cta, .partnerships-hero, .partnerships-ways, .partnerships-donation, .partnerships-cta { padding-inline: 7%; }
   .nutrition-care { grid-template-columns: .75fr 1.25fr; gap: 5%; }
   .admissions-steps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 42px; }
-  .admissions-fees, .admissions-faq { gap: 5%; }
+  .admissions-fees, .admissions-faq, .partnerships-donation { gap: 5%; }
+  .partnerships-why-copy { padding-inline: 9%; }
+  .partnerships-ways-grid { gap: 38px 5%; }
   .programme-options-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px; }
 }
 
@@ -306,6 +355,29 @@ a { color: inherit; text-decoration: none; }
   .admissions-cta { flex-direction: column; align-items: flex-start; gap: 30px; padding: 64px 7%; }
   .admissions-cta h2 { font-size: clamp(44px, 10vw, 58px); }
   .admissions-cta .button { align-self: flex-start; }
+  .contact-hero { grid-template-columns: 1fr; gap: 28px; padding: 64px 7% 52px; }
+  .contact-hero h1 { font-size: clamp(48px, 12vw, 62px); }
+  .contact-hero-copy p:first-child { font-size: 17px; }
+  .contact-details { grid-template-columns: 1fr; gap: 38px; padding: 64px 7%; }
+  .contact-details h2 { font-size: 25px; }
+  .contact-cta, .partnerships-cta { flex-direction: column; align-items: flex-start; gap: 30px; padding: 64px 7%; }
+  .contact-cta h2, .partnerships-cta h2 { font-size: clamp(44px, 10vw, 58px); }
+  .contact-cta .button, .partnerships-cta .button { align-self: flex-start; }
+  .partnerships-hero { padding: 64px 7%; }
+  .partnerships-hero > .eyebrow { margin-bottom: 25px; }
+  .partnerships-hero-grid { grid-template-columns: 1fr; gap: 24px; }
+  .partnerships-hero h1 { font-size: clamp(48px, 12vw, 64px); }
+  .partnerships-hero-grid > p { font-size: 15px; }
+  .partnerships-why { grid-template-columns: 1fr; }
+  .partnerships-photo { min-height: clamp(320px, 95vw, 390px); }
+  .partnerships-why-copy { padding: 64px 7%; }
+  .partnerships-why-copy h2, .partnerships-donation-intro h2 { font-size: clamp(40px, 10.5vw, 54px); }
+  .partnerships-ways { padding: 64px 7%; }
+  .partnerships-section-heading { display: block; margin-bottom: 38px; }
+  .partnerships-section-heading h2 { font-size: clamp(40px, 10.5vw, 54px); }
+  .partnerships-ways-grid { grid-template-columns: 1fr; gap: 30px; }
+  .partnerships-donation { grid-template-columns: 1fr; gap: 36px; padding: 64px 7%; }
+  .donation-details { grid-template-columns: 1fr; gap: 24px; }
   .eyebrow { font-weight: 800; }
   .text-link { font-weight: 800; }
   .hero .eyebrow { margin-bottom: 18px; }
