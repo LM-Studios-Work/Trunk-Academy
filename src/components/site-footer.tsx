@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { navigation } from "@/components/site-navigation";
 
@@ -9,6 +10,13 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-brand-block">
         <Link className="brand footer-brand" href="/" aria-label="Trunk Academy home">
+          <Image
+            src="/trunk academy logo.png"
+            alt="Trunk Academy logo"
+            width={46}
+            height={69}
+            className="brand-logo footer-brand-logo"
+          />
           <span className="brand-name">TRUNK<br />ACADEMY</span>
         </Link>
         <p>Little beginnings, cared for with love.</p>
@@ -24,8 +32,19 @@ export function SiteFooter() {
         </div>
       </nav>
       <div className="footer-bottom">
-        <p className="footer-copy">© {new Date().getFullYear()} Trunk Academy</p>
-        <Link href="#top" className="footer-top">Back to top</Link>
+        <div className="footer-bottom-main">
+          <p className="footer-copy">© {new Date().getFullYear()} Trunk Academy</p>
+          <a href="#top" className="footer-top">Back to top</a>
+        </div>
+        <div className="footer-credit">
+          <a
+            href="https://www.lmwebdesign.co.za/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            designed by lmwebdesign
+          </a>
+        </div>
       </div>
     </footer>
   );

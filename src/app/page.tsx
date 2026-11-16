@@ -3,8 +3,8 @@ import Link from "next/link";
 import { HomeDiscoverySection } from "@/components/home-discovery-section";
 
 const photos = {
-  hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225637-MuFDLtdO6GhhbpIsx1qvGvJwhUDhWA.png",
-  friends: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225703-8mb6VUFGZaRGQ5fwOLVRjK63Q3dYqz.png",
+  hero: "/images/Gemini_Generated_Image_m8bumpm8bumpm8bu.webp",
+  friends: "/images/Gemini_Generated_Image_6eb2wc6eb2wc6eb2.webp",
 };
 
 const facts = [
@@ -32,7 +32,10 @@ export default function Home() {
           <h1>A happy start<br />for little ones.</h1>
           <p className="hero-intro">A warm, play-based place to learn, belong and grow from the very beginning.</p>
           <div className="hero-actions">
-            <Link className="button button-dark" href="#welcome" aria-label="Meet Trunk Academy"><span className="button-label">Meet Trunk Academy</span><span className="button-arrow" aria-hidden="true">→</span></Link>
+            <a className="button button-dark" href="#welcome" aria-label="Meet Trunk Academy">
+              <span className="button-label">Meet Trunk Academy</span>
+              <span className="button-arrow" aria-hidden="true">→</span>
+            </a>
             <Link className="text-link" href="/programmes">Explore our programmes</Link>
           </div>
         </div>
@@ -60,11 +63,26 @@ export default function Home() {
       <HomeDiscoverySection />
 
       <section className="play-section">
-        <div className="play-copy"><p className="eyebrow">Room to explore</p><h2>Curiosity has<br />a place to grow.</h2><p>From first friendships to new discoveries, we make space for children to explore the world around them one day at a time.</p><a className="text-link" href="#contact">Explore life at Trunk</a></div>
+        <div className="play-copy">
+          <p className="eyebrow">Room to explore</p>
+          <h2>Curiosity has<br />a place to grow.</h2>
+          <p>From first friendships to new discoveries, we make space for children to explore the world around them one day at a time.</p>
+          <Link className="text-link" href="/contact">Enquire about life at Trunk</Link>
+        </div>
         <div className="play-type" aria-hidden="true"><span>Play.</span><span>Learn.</span><span>Belong.</span></div>
       </section>
 
-      <section className="cta-section" id="contact"><span id="admissions" /><p className="eyebrow">Your next step starts with a hello</p><h2>Let’s find out if<br />Trunk feels like home.</h2><p>We’d love to welcome your family and answer your questions. Visit our <Link className="cta-inline-link" href="/admissions">admissions page</Link> to take the next step.</p><a className="button button-light" href="#welcome" aria-label="Meet the team"><span className="button-label">Meet the team</span><span className="button-arrow" aria-hidden="true">→</span></a><span className="cta-note">Trunk Academy Babyhouse & Preschool, Cosmo City, Randburg</span></section>
+      <section className="cta-section" id="contact">
+        <span id="admissions" />
+        <p className="eyebrow">Your next step starts with a hello</p>
+        <h2>Let’s find out if<br />Trunk feels like home.</h2>
+        <p>We’d love to welcome your family and answer your questions. Visit our <Link className="cta-inline-link" href="/admissions">admissions page</Link> to take the next step.</p>
+        <Link className="button button-light" href="/contact" aria-label="Make an enquiry">
+          <span className="button-label">Make an enquiry</span>
+          <span className="button-arrow" aria-hidden="true">→</span>
+        </Link>
+        <span className="cta-note">Trunk Academy Babyhouse & Preschool, Cosmo City, Randburg</span>
+      </section>
     </main>
   );
 }

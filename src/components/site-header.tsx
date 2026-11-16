@@ -1,10 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { navigation } from "@/components/site-navigation";
 import { useEffect, useRef, useState } from "react";
 
 export function SiteHeader() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuToggleRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -60,10 +63,22 @@ export function SiteHeader() {
     <>
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Trunk Academy home">
+          <Image
+            src="/trunk academy logo.png"
+            alt="Trunk Academy logo"
+            width={46}
+            height={69}
+            className="brand-logo"
+            priority
+          />
           <span className="brand-name">TRUNK<br />ACADEMY</span>
         </Link>
         <nav aria-label="Main navigation" className="main-nav">
-          {navigation.map(({ label, href }) => <Link href={href} key={label}>{label}</Link>)}
+          {navigation.map(({ label, href }) => (
+            <Link href={href} key={label} aria-current={pathname === href ? "page" : undefined}>
+              {label}
+            </Link>
+          ))}
         </nav>
         <button
           className="mobile-menu-toggle"
@@ -92,12 +107,29 @@ export function SiteHeader() {
         <button className="mobile-menu-scrim" type="button" tabIndex={-1} aria-label="Close menu" onClick={() => setIsMenuOpen(false)} />
         <div className="mobile-menu-drawer">
           <div className="mobile-menu-heading">
-            <p id="mobile-menu-title">Trunk Academy</p>
+            <div className="mobile-menu-brand">
+              <Image
+                src="/trunk academy logo.png"
+                alt="Trunk Academy logo"
+                width={36}
+                height={54}
+                className="mobile-menu-logo"
+              />
+              <p id="mobile-menu-title">Trunk Academy</p>
+            </div>
             <button className="mobile-menu-close" type="button" aria-label="Close navigation" onClick={() => setIsMenuOpen(false)}>×</button>
           </div>
           <nav className="mobile-nav-links" aria-label="Mobile navigation">
             {navigation.map(({ label, href }, index) => (
-              <Link href={href} key={label} onClick={() => setIsMenuOpen(false)} ref={index === 0 ? firstLinkRef : undefined}>{label}</Link>
+              <Link
+                href={href}
+                key={label}
+                aria-current={pathname === href ? "page" : undefined}
+                onClick={() => setIsMenuOpen(false)}
+                ref={index === 0 ? firstLinkRef : undefined}
+              >
+                {label}
+              </Link>
             ))}
           </nav>
           <div className="mobile-menu-footer">

@@ -83,15 +83,25 @@ export function AdmissionsPage() {
         </div>
       </section>
 
-      <div className="admissions-photo">
-        <Image
-          src="/images/trunk-learning-moment.png"
-          alt="Children exploring and playing together outdoors"
-          fill
-          priority
-          sizes="100vw"
-        />
-      </div>
+      <section className="admissions-photo-pair" aria-label="Children at Trunk Academy">
+        <div className="admissions-photo">
+          <Image
+            src="/images/Gemini_Generated_Image_6eb2wc6eb2wc6eb2.webp"
+            alt="Two preschool friends playing together with hula hoops"
+            fill
+            priority
+            sizes="(max-width: 700px) 100vw, 50vw"
+          />
+        </div>
+        <div className="admissions-photo">
+          <Image
+            src="/images/Gemini_Generated_Image_e7juhye7juhye7ju.webp"
+            alt="A smiling child at Trunk Academy"
+            fill
+            sizes="(max-width: 700px) 100vw, 50vw"
+          />
+        </div>
+      </section>
 
       <section className="admissions-steps" aria-labelledby="enrolment-steps-title">
         <div className="admissions-section-heading">
@@ -109,6 +119,30 @@ export function AdmissionsPage() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className="admissions-body-feature" aria-labelledby="admissions-visit-title">
+        <div className="admissions-body-copy">
+          <p className="eyebrow">Come see our space</p>
+          <h2 id="admissions-visit-title">See where their<br />day happens.</h2>
+          <p>We welcome children from 3 months to 5 years across Full Day, Half Day, Hybrid and Day Visit options. Arrange a visit to see our classrooms and play areas in Cosmo City and meet the team before your child’s first day.</p>
+          <a
+            className="text-link"
+            href={whatsappLink("Hi Trunk Academy, I’d like to arrange a visit to see the school.")}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Arrange a school visit on WhatsApp
+          </a>
+        </div>
+        <div className="admissions-body-photo">
+          <Image
+            src="/images/Gemini_Generated_Image_m8bumpm8bumpm8bu.webp"
+            alt="A joyful young child laughing during play at Trunk Academy"
+            fill
+            sizes="(max-width: 700px) 100vw, 50vw"
+          />
+        </div>
       </section>
 
       <section className="admissions-fees" aria-labelledby="fees-policies-title">
@@ -132,6 +166,14 @@ export function AdmissionsPage() {
         <div className="admissions-faq-heading">
           <p className="eyebrow">Good to know</p>
           <h2 id="admissions-faq-title">A few things<br />families ask.</h2>
+          <div className="admissions-faq-photo">
+            <Image
+              src="/images/Gemini_Generated_Image_mp4jormp4jormp4j.webp"
+              alt="A playful young child bending upside down and smiling"
+              fill
+              sizes="(max-width: 700px) 100vw, 35vw"
+            />
+          </div>
         </div>
         <div className="admissions-faq-grid">
           {questions.map(({ question, answer }) => (

@@ -7,7 +7,8 @@ import { ContactPage } from "@/components/contact-page";
 import { NutritionSafetyPage } from "@/components/nutrition-safety-page";
 import { PartnershipsDonorsPage } from "@/components/partnerships-donors-page";
 
-const placeholderPages = [
+const staticPages = [
+  { slug: "programmes", title: "Programmes & Curriculum" },
   { slug: "nutrition-safety", title: "Nutrition, Health & Safety" },
   { slug: "admissions", title: "Admissions" },
   { slug: "contact", title: "Contact" },
@@ -33,12 +34,12 @@ const schoolReadiness = [
 ];
 
 export function generateStaticParams() {
-  return placeholderPages.map(({ slug }) => ({ slug }));
+  return staticPages.map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const page = placeholderPages.find((item) => item.slug === slug);
+  const page = staticPages.find((item) => item.slug === slug);
 
   if (slug === "admissions") {
     return {
@@ -80,7 +81,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function PlaceholderPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const page = placeholderPages.find((item) => item.slug === slug);
+  const page = staticPages.find((item) => item.slug === slug);
 
   if (slug === "admissions") return <AdmissionsPage />;
   if (slug === "contact") return <ContactPage />;
@@ -99,8 +100,8 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
           <div className="programmes-hero-image">
             <Image
-              src="/images/trunk-learning-moment.png"
-              alt="Children sharing an outdoor play and learning moment with blocks and leaves"
+              src="/images/Gemini_Generated_Image_80s83a80s83a80s8.webp"
+              alt="A smiling child in a lavender beanie holding out two bright yellow play balls"
               fill
               priority
               sizes="(max-width: 700px) 100vw, 50vw"
@@ -127,8 +128,8 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
         <section className="teaching-approach" aria-labelledby="teaching-approach-title">
           <div className="teaching-approach-image">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225703-8mb6VUFGZaRGQ5fwOLVRjK63Q3dYqz.png"
-              alt="Two preschool friends playing together"
+              src="/images/Gemini_Generated_Image_mp4jormp4jormp4j.webp"
+              alt="A playful young child bending upside down with a big smile"
               fill
               sizes="(max-width: 700px) 100vw, 50vw"
             />
@@ -174,7 +175,7 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
         <section className="programmes-cta">
           <p className="eyebrow">Want to see our programmes in action?</p>
           <h2>Come say hello.</h2>
-          <Link className="button button-light" href="/admissions">Start enrolment</Link>
+          <Link className="button button-light" href="/contact">Make an enquiry</Link>
         </section>
       </main>
     );

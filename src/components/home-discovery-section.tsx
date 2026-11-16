@@ -6,8 +6,8 @@ export function HomeDiscoverySection() {
     <section className="learning-section" aria-labelledby="learning-heading">
       <div className="learning-photo">
         <Image
-          src="/images/trunk-learning-moment.png"
-          alt="Preschool children exploring leaves and wooden blocks together outdoors"
+          src="/images/Gemini_Generated_Image_wmj1zrwmj1zrwmj1.webp"
+          alt="A young child holding up pink painted hands with a joyful expression of discovery"
           fill
           sizes="(max-width: 700px) 100vw, 50vw"
         />

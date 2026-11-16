@@ -48,8 +48,8 @@ export function PartnershipsDonorsPage() {
       <section className="partnerships-why" aria-labelledby="partnerships-why-title">
         <div className="partnerships-photo">
           <Image
-            src="/images/trunk-learning-moment.png"
-            alt="Children learning and playing together outdoors"
+            src="/images/Gemini_Generated_Image_wmj1zrwmj1zrwmj1.webp"
+            alt="A young child showing painted pink hands in a moment of creative discovery"
             fill
             sizes="(max-width: 700px) 100vw, 50vw"
           />

@@ -49,19 +49,19 @@ export function NutritionSafetyPage() {
       <section className="nutrition-photo-pair" aria-label="Children enjoying time together at school">
         <div className="nutrition-photo nutrition-photo-wide">
           <Image
-            src="/images/trunk-learning-moment.png"
-            alt="Children exploring and playing together outdoors"
+            src="/images/Gemini_Generated_Image_e7juhye7juhye7ju.webp"
+            alt="A smiling young girl in a blue ruffled top"
             fill
             priority
-            sizes="(max-width: 700px) 100vw, 62vw"
+            sizes="(max-width: 700px) 100vw, 50vw"
           />
         </div>
         <div className="nutrition-photo nutrition-photo-narrow">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225637-MuFDLtdO6GhhbpIsx1qvGvJwhUDhWA.png"
-            alt="A young child enjoying a playful moment"
+            src="/images/Gemini_Generated_Image_80s83a80s83a80s8.webp"
+            alt="A cheerful young child holding two yellow play balls"
             fill
-            sizes="(max-width: 700px) 100vw, 38vw"
+            sizes="(max-width: 700px) 100vw, 50vw"
           />
         </div>
       </section>
@@ -102,7 +102,7 @@ export function NutritionSafetyPage() {
           <p className="eyebrow">Here for your questions</p>
           <h2 id="nutrition-contact-title">A question about meals or your child’s health needs?</h2>
         </div>
-        <Link className="button button-light" href="/contact">Get in touch</Link>
+        <Link className="button button-light" href="/contact">Make an enquiry</Link>
       </section>
     </main>
   );
