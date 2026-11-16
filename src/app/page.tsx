@@ -30,9 +30,9 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">A babyhouse & preschool in Cosmo City</p>
           <h1>A happy start<br />for little ones.</h1>
-          <p className="hero-intro">A warm, play-based place to learn, belong and grow — from the very beginning.</p>
+          <p className="hero-intro">A warm, play-based place to learn, belong and grow from the very beginning.</p>
           <div className="hero-actions">
-            <a className="button button-dark" href="#welcome" aria-label="Meet Trunk Academy"><span className="button-label">Meet Trunk Academy</span><span className="button-arrow" aria-hidden="true">→</span></a>
+            <Link className="button button-dark" href="/about" aria-label="Meet Trunk Academy"><span className="button-label">Meet Trunk Academy</span><span className="button-arrow" aria-hidden="true">→</span></Link>
             <Link className="text-link" href="/programmes">Explore our programmes</Link>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Home() {
       <HomeDiscoverySection />
 
       <section className="play-section">
-        <div className="play-copy"><p className="eyebrow">Room to explore</p><h2>Curiosity has<br />a place to grow.</h2><p>From first friendships to new discoveries, we make space for children to explore the world around them — one day at a time.</p><a className="text-link" href="#contact">Explore life at Trunk</a></div>
+        <div className="play-copy"><p className="eyebrow">Room to explore</p><h2>Curiosity has<br />a place to grow.</h2><p>From first friendships to new discoveries, we make space for children to explore the world around them one day at a time.</p><a className="text-link" href="#contact">Explore life at Trunk</a></div>
         <div className="play-type" aria-hidden="true"><span>Play.</span><span>Learn.</span><span>Belong.</span></div>
       </section>
 
