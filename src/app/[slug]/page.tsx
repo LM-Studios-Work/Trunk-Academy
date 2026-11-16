@@ -87,13 +87,23 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
         </section>
 
         <section className="teaching-approach" aria-labelledby="teaching-approach-title">
-          <div className="teaching-approach-heading">
-            <p className="eyebrow">How children learn</p>
-            <h2 id="teaching-approach-title">Play is how<br />we begin.</h2>
+          <div className="teaching-approach-image">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-11-15%20225703-8mb6VUFGZaRGQ5fwOLVRjK63Q3dYqz.png"
+              alt="Two preschool friends playing together"
+              fill
+              sizes="(max-width: 700px) 100vw, 50vw"
+            />
           </div>
-          <div className="teaching-approach-copy">
-            <p>Play is the primary way young children learn. Our curriculum weaves learning into enjoyable, meaningful experiences, and our daily schedule balances structured learning time with child-directed play so children stay engaged and enthusiastic.</p>
-            <p>We celebrate diversity and bring multicultural perspectives into the classroom, helping children develop respect and appreciation for all people.</p>
+          <div className="teaching-approach-content">
+            <div className="teaching-approach-heading">
+              <p className="eyebrow">How children learn</p>
+              <h2 id="teaching-approach-title">Play is how<br />we begin.</h2>
+            </div>
+            <div className="teaching-approach-copy">
+              <p>Play is the primary way young children learn. Our curriculum weaves learning into enjoyable, meaningful experiences, and our daily schedule balances structured learning time with child-directed play so children stay engaged and enthusiastic.</p>
+              <p>We celebrate diversity and bring multicultural perspectives into the classroom, helping children develop respect and appreciation for all people.</p>
+            </div>
           </div>
         </section>
 
