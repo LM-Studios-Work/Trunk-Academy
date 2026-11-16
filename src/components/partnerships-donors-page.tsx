@@ -45,7 +45,7 @@ export function PartnershipsDonorsPage() {
         </div>
       </section>
 
-      <section className="partnerships-why" aria-labelledby="partnerships-why-title">
+      <section className="partnerships-why" id="why-partner" aria-labelledby="partnerships-why-title">
         <div className="partnerships-photo">
           <Image
             src="/images/Gemini_Generated_Image_wmj1zrwmj1zrwmj1.webp"
@@ -61,7 +61,7 @@ export function PartnershipsDonorsPage() {
         </div>
       </section>
 
-      <section className="partnerships-ways" aria-labelledby="ways-to-help-title">
+      <section className="partnerships-ways" id="ways-to-help" aria-labelledby="ways-to-help-title">
         <div className="partnerships-section-heading">
           <p className="eyebrow">Ways to help</p>
           <h2 id="ways-to-help-title">A contribution<br />that makes a difference.</h2>
@@ -76,7 +76,7 @@ export function PartnershipsDonorsPage() {
         </div>
       </section>
 
-      <section className="partnerships-donation" aria-labelledby="donation-title">
+      <section className="partnerships-donation" id="donation" aria-labelledby="donation-title">
         <div className="partnerships-donation-intro">
           <p className="eyebrow">Make a donation</p>
           <h2 id="donation-title">Thank you for<br />standing with us.</h2>
@@ -93,7 +93,7 @@ export function PartnershipsDonorsPage() {
         </dl>
       </section>
 
-      <section className="partnerships-cta" aria-labelledby="partnerships-cta-title">
+      <section className="partnerships-cta" id="partnerships-cta" aria-labelledby="partnerships-cta-title">
         <div>
           <p className="eyebrow">Interested in a partnership or sponsorship?</p>
           <h2 id="partnerships-cta-title">Let’s talk.</h2>

@@ -66,7 +66,7 @@ export function NutritionSafetyPage() {
         </div>
       </section>
 
-      <section className="nutrition-meals" aria-labelledby="meal-routine-title">
+      <section className="nutrition-meals" id="nutrition-meals" aria-labelledby="meal-routine-title">
         <div className="nutrition-meals-heading">
           <p className="eyebrow">Made fresh each day</p>
           <h2 id="meal-routine-title">Nutritious meals,<br />cooked fresh daily.</h2>
@@ -82,7 +82,7 @@ export function NutritionSafetyPage() {
         </ul>
       </section>
 
-      <section className="nutrition-care" aria-labelledby="care-practices-title">
+      <section className="nutrition-care" id="nutrition-care" aria-labelledby="care-practices-title">
         <div className="nutrition-care-heading">
           <p className="eyebrow">The details that matter</p>
           <h2 id="care-practices-title">Care you can<br />feel good about.</h2>
@@ -97,7 +97,7 @@ export function NutritionSafetyPage() {
         </div>
       </section>
 
-      <section className="nutrition-contact" aria-labelledby="nutrition-contact-title">
+      <section className="nutrition-contact" id="nutrition-contact" aria-labelledby="nutrition-contact-title">
         <div>
           <p className="eyebrow">Here for your questions</p>
           <h2 id="nutrition-contact-title">A question about meals or your child’s health needs?</h2>

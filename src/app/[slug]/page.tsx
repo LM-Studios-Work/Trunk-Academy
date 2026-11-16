@@ -110,7 +110,7 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <section className="programme-options" aria-labelledby="programme-options-title">
+        <section className="programme-options" id="programme-options" aria-labelledby="programme-options-title">
           <div className="programme-section-heading">
             <p className="eyebrow">Our programme options</p>
             <h2 id="programme-options-title">A day that fits<br />your family.</h2>
@@ -125,7 +125,7 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <section className="teaching-approach" aria-labelledby="teaching-approach-title">
+        <section className="teaching-approach" id="teaching-approach" aria-labelledby="teaching-approach-title">
           <div className="teaching-approach-image">
             <Image
               src="/images/Gemini_Generated_Image_mp4jormp4jormp4j.webp"
@@ -146,7 +146,7 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <section className="whole-child" aria-labelledby="whole-child-title">
+        <section className="whole-child" id="whole-child" aria-labelledby="whole-child-title">
           <div className="whole-child-intro">
             <p className="eyebrow">Growing in every direction</p>
             <h2 id="whole-child-title">The whole<br />child matters.</h2>
@@ -156,7 +156,7 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <section className="school-readiness" aria-labelledby="school-readiness-title">
+        <section className="school-readiness" id="school-readiness" aria-labelledby="school-readiness-title">
           <div className="readiness-heading">
             <p className="eyebrow">For our older preschoolers</p>
             <h2 id="school-readiness-title">Ready for<br />what comes next.</h2>
@@ -167,12 +167,12 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
         </section>
 
-        <section className="progress-reports" aria-label="Progress reports">
+        <section className="progress-reports" id="progress-reports" aria-label="Progress reports">
           <p className="eyebrow">Growing, together</p>
           <h2>Every child receives a report twice a year, so you always know how they are growing.</h2>
         </section>
 
-        <section className="programmes-cta">
+        <section className="programmes-cta" id="programmes-cta">
           <p className="eyebrow">Want to see our programmes in action?</p>
           <h2>Come say hello.</h2>
           <Link className="button button-light" href="/contact">Make an enquiry</Link>

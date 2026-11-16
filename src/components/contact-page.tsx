@@ -16,7 +16,7 @@ export function ContactPage() {
         </div>
       </section>
 
-      <section className="contact-details" aria-label="Contact details">
+      <section className="contact-details" id="contact-details" aria-label="Contact details">
         <article>
           <p className="eyebrow">WhatsApp</p>
           <h2><a href={whatsappLink} target="_blank" rel="noopener noreferrer">081 351 4996</a></h2>
@@ -41,7 +41,7 @@ export function ContactPage() {
         </article>
       </section>
 
-      <section className="contact-cta" aria-labelledby="contact-cta-title">
+      <section className="contact-cta" id="contact-cta" aria-labelledby="contact-cta-title">
         <div>
           <p className="eyebrow">We’re here to help</p>
           <h2 id="contact-cta-title">A message is a<br />lovely place to start.</h2>

@@ -103,7 +103,7 @@ export function AdmissionsPage() {
         </div>
       </section>
 
-      <section className="admissions-steps" aria-labelledby="enrolment-steps-title">
+      <section className="admissions-steps" id="admissions-steps" aria-labelledby="enrolment-steps-title">
         <div className="admissions-section-heading">
           <div>
             <p className="eyebrow">Five steps to get started</p>
@@ -121,7 +121,7 @@ export function AdmissionsPage() {
         </ol>
       </section>
 
-      <section className="admissions-body-feature" aria-labelledby="admissions-visit-title">
+      <section className="admissions-body-feature" id="admissions-visit" aria-labelledby="admissions-visit-title">
         <div className="admissions-body-copy">
           <p className="eyebrow">Come see our space</p>
           <h2 id="admissions-visit-title">See where their<br />day happens.</h2>
@@ -145,7 +145,7 @@ export function AdmissionsPage() {
         </div>
       </section>
 
-      <section className="admissions-fees" aria-labelledby="fees-policies-title">
+      <section className="admissions-fees" id="admissions-fees" aria-labelledby="fees-policies-title">
         <div className="admissions-fees-heading">
           <p className="eyebrow">Clear from the start</p>
           <h2 id="fees-policies-title">Fees & policies<br />at a glance.</h2>
@@ -162,7 +162,7 @@ export function AdmissionsPage() {
         </div>
       </section>
 
-      <section className="admissions-faq" aria-labelledby="admissions-faq-title">
+      <section className="admissions-faq" id="admissions-faq" aria-labelledby="admissions-faq-title">
         <div className="admissions-faq-heading">
           <p className="eyebrow">Good to know</p>
           <h2 id="admissions-faq-title">A few things<br />families ask.</h2>
@@ -185,7 +185,7 @@ export function AdmissionsPage() {
         </div>
       </section>
 
-      <section className="admissions-cta" aria-labelledby="admissions-cta-title">
+      <section className="admissions-cta" id="admissions-cta" aria-labelledby="admissions-cta-title">
         <div>
           <p className="eyebrow">Ready to secure a place?</p>
           <h2 id="admissions-cta-title">Request the<br />registration form.</h2>
