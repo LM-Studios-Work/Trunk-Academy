@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdmissionsPage } from "@/components/admissions-page";
+import { ContactPage } from "@/components/contact-page";
 import { NutritionSafetyPage } from "@/components/nutrition-safety-page";
+import { PartnershipsDonorsPage } from "@/components/partnerships-donors-page";
 
 const placeholderPages = [
   { slug: "nutrition-safety", title: "Nutrition, Health & Safety" },
@@ -37,6 +40,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const page = placeholderPages.find((item) => item.slug === slug);
 
+  if (slug === "admissions") {
+    return {
+      title: "Admissions & Enrolment | Trunk Academy",
+      description: "Find out how to enrol at Trunk Academy, review fees and policies, and ask about availability or a visit.",
+    };
+  }
+
+  if (slug === "contact") {
+    return {
+      title: "Contact | Trunk Academy",
+      description: "Contact Trunk Academy in Cosmo City by WhatsApp, email or visit us during opening hours.",
+    };
+  }
+
+  if (slug === "partners-donors") {
+    return {
+      title: "Sponsorship, Partnerships & Donors | Trunk Academy",
+      description: "Support early learning in Cosmo City through meal sponsorships, learning resources, facilities, partnerships, goods or time.",
+    };
+  }
+
   if (slug === "nutrition-safety") {
     return {
       title: "Nutrition, Health & Safety | Trunk Academy",
@@ -57,6 +81,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function PlaceholderPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const page = placeholderPages.find((item) => item.slug === slug);
+
+  if (slug === "admissions") return <AdmissionsPage />;
+  if (slug === "contact") return <ContactPage />;
+  if (slug === "partners-donors") return <PartnershipsDonorsPage />;
 
   if (slug === "nutrition-safety") return <NutritionSafetyPage />;
 
