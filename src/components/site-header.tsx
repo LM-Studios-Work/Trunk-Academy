@@ -18,7 +18,7 @@ export function SiteHeader() {
       <nav aria-label="Main navigation" className="main-nav">
         {navigation.map(({ label, href }) => <Link href={href} key={label}>{label}</Link>)}
       </nav>
-      <Link className="header-cta" href="/contact">Come say hello</Link>
+      <Link className="header-cta" href="/contact" aria-label="Come say hello"><span className="header-cta-label">Come say hello</span><span className="header-cta-arrow" aria-hidden="true">→</span></Link>
     </header>
   );
 }
