@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navigation } from "@/components/site-header";
+import { navigation } from "@/components/site-navigation";
 
 const exploreLinks = navigation.slice(0, 4);
 const communityLinks = navigation.slice(4);
