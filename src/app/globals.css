@@ -138,6 +138,33 @@ a { color: inherit; text-decoration: none; }
 .programmes-cta h2 { font-size: clamp(58px, 7vw, 96px); margin-bottom: 32px; }
 .placeholder-page { min-height: clamp(320px, 48vh, 620px); background: var(--paper); }
 
+.nutrition-page { background: var(--paper); }
+.nutrition-intro { display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 8%; padding: 92px 10% 78px; background: var(--peach); }
+.nutrition-intro .eyebrow { margin-bottom: 24px; }
+.nutrition-intro h1, .nutrition-meals h2, .nutrition-care h2, .nutrition-contact h2 { max-width: 11ch; margin: 0; font-size: clamp(58px, 7.8vw, 104px); font-weight: 850; letter-spacing: -.075em; line-height: .91; }
+.nutrition-intro-copy { max-width: 29ch; margin: 0 0 6px; color: #584235; font-size: 17px; line-height: 1.7; }
+.nutrition-photo-pair { display: grid; grid-template-columns: 1.6fr 1fr; gap: 12px; padding: 12px; background: var(--paper); }
+.nutrition-photo { position: relative; min-height: 390px; overflow: hidden; background: #877866; }
+.nutrition-photo img { object-fit: cover; }
+.nutrition-photo-wide img { object-position: center 52%; }
+.nutrition-photo-narrow img { object-position: 52% center; }
+.nutrition-meals { display: grid; grid-template-columns: .9fr 1.1fr; gap: 9%; padding: 104px 10%; }
+.nutrition-meals-heading .eyebrow, .nutrition-care-heading .eyebrow { margin-bottom: 20px; }
+.nutrition-meals h2, .nutrition-care h2 { max-width: 13ch; font-size: clamp(42px, 5.4vw, 70px); }
+.nutrition-meals-heading > p:last-child { max-width: 34ch; margin: 24px 0 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.meal-routine-list { display: grid; grid-template-columns: 1fr 1fr; gap: 42px 36px; align-content: end; margin: 0; padding: 0; list-style: none; }
+.meal-routine-list li { padding-top: 6px; }
+.meal-routine-list h3, .care-practices-grid h3 { margin: 0 0 12px; font-size: 19px; font-weight: 750; letter-spacing: -.04em; }
+.meal-routine-list p, .care-practices-grid p { max-width: 31ch; margin: 0; color: #5e493c; font-size: 13px; line-height: 1.8; }
+.nutrition-care { display: grid; grid-template-columns: .7fr 1.3fr; gap: 8%; padding: 100px 10%; background: var(--butter); }
+.nutrition-care-heading { align-self: start; }
+.care-practices-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 42px 38px; }
+.care-practices-grid article { align-self: start; }
+.nutrition-contact { display: flex; align-items: end; justify-content: space-between; gap: 40px; padding: 82px 10%; background: var(--ink); color: var(--paper); }
+.nutrition-contact .eyebrow { margin-bottom: 22px; color: #e2b99b; }
+.nutrition-contact h2 { max-width: 15ch; font-size: clamp(38px, 5.5vw, 68px); }
+.nutrition-contact .button { flex: none; }
+
 .site-footer { display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 44px 8%; padding: 58px 8% 25px; background: var(--paper); border-top: 1px solid #e8ded2; }
 .footer-brand-block { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .footer-brand-block p { max-width: 190px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
@@ -161,7 +188,9 @@ a { color: inherit; text-decoration: none; }
   .reasons-section { padding-inline: 7%; }
   .reasons-grid { column-gap: 22px; }
   .reason-card h3 { font-size: 14px; }
-  .programme-options, .teaching-approach, .whole-child, .school-readiness { padding-inline: 7%; }
+  .programme-options, .teaching-approach, .whole-child, .school-readiness, .nutrition-meals, .nutrition-care { padding-inline: 7%; }
+  .nutrition-intro { padding-inline: 7%; }
+  .nutrition-care { grid-template-columns: .75fr 1.25fr; gap: 5%; }
   .programme-options-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px; }
 }
 
@@ -217,6 +246,20 @@ a { color: inherit; text-decoration: none; }
   .progress-reports h2 { font-size: clamp(30px, 8vw, 40px); }
   .programmes-cta { padding: 64px 7%; }
   .programmes-cta h2 { font-size: clamp(42px, 10.5vw, 56px); }
+  .nutrition-intro { grid-template-columns: 1fr; gap: 28px; padding: 64px 7% 48px; }
+  .nutrition-intro h1 { font-size: clamp(47px, 12vw, 66px); }
+  .nutrition-intro-copy { max-width: 34ch; font-size: 15px; }
+  .nutrition-photo-pair { grid-template-columns: 1fr; gap: 8px; padding: 8px; }
+  .nutrition-photo { min-height: 320px; }
+  .nutrition-photo-narrow { min-height: 250px; }
+  .nutrition-meals { grid-template-columns: 1fr; gap: 42px; padding: 64px 7%; }
+  .nutrition-meals h2, .nutrition-care h2 { font-size: clamp(40px, 10.5vw, 54px); }
+  .meal-routine-list { gap: 30px 18px; }
+  .meal-routine-list h3, .care-practices-grid h3 { font-size: 17px; }
+  .nutrition-care { grid-template-columns: 1fr; gap: 38px; padding: 64px 7%; }
+  .care-practices-grid { gap: 30px 18px; }
+  .nutrition-contact { flex-direction: column; align-items: flex-start; gap: 30px; padding: 64px 7%; }
+  .nutrition-contact h2 { font-size: clamp(38px, 9.5vw, 52px); }
   .eyebrow { font-weight: 800; }
   .text-link { font-weight: 800; }
   .hero .eyebrow { margin-bottom: 18px; }

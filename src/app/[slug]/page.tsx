@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { NutritionSafetyPage } from "@/components/nutrition-safety-page";
 
 const placeholderPages = [
-  { slug: "nutrition-safety", title: "Nutrition & Safety" },
+  { slug: "nutrition-safety", title: "Nutrition, Health & Safety" },
   { slug: "admissions", title: "Admissions" },
   { slug: "contact", title: "Contact" },
   { slug: "partners-donors", title: "Partners & Donors" },
@@ -36,6 +37,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const page = placeholderPages.find((item) => item.slug === slug);
 
+  if (slug === "nutrition-safety") {
+    return {
+      title: "Nutrition, Health & Safety | Trunk Academy",
+      description: "Learn about Trunk Academy’s fresh daily meals, health information, safety routines and family communication.",
+    };
+  }
+
   if (slug === "programmes") {
     return {
       title: "Programmes & Curriculum | Trunk Academy",
@@ -49,6 +57,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function PlaceholderPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const page = placeholderPages.find((item) => item.slug === slug);
+
+  if (slug === "nutrition-safety") return <NutritionSafetyPage />;
 
   if (slug === "programmes") {
     return (
