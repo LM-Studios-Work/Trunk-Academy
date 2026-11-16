@@ -97,6 +97,42 @@ a { color: inherit; text-decoration: none; }
 .button-light:hover { background: #f9e4d2; }
 .cta-note { font-size: 10px; color: #c6ad9b; margin-top: 33px; }
 
+.programmes-page { background: var(--paper); }
+.programmes-hero { min-height: 510px; display: grid; grid-template-columns: 1.2fr .8fr; background: var(--peach); }
+.programmes-hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 76px 10%; }
+.programmes-hero-copy .eyebrow { margin-bottom: 22px; }
+.programmes-hero-copy h1, .programme-section-heading h2, .teaching-approach-heading h2, .whole-child-intro h2, .readiness-heading h2, .programmes-cta h2 { margin: 0; font-size: clamp(64px, 8vw, 112px); font-weight: 850; letter-spacing: -.075em; line-height: .9; }
+.programmes-hero-copy > p:last-child { max-width: 390px; margin: 25px 0 0; color: #584235; font-size: 14px; line-height: 1.8; }
+.programmes-hero-note { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; min-height: 510px; padding: 48px 12%; background: var(--cocoa); color: var(--paper); }
+.programmes-hero-note span { max-width: 8ch; font-size: clamp(42px, 5vw, 70px); font-weight: 800; letter-spacing: -.065em; line-height: .95; }
+.programmes-hero-note p { max-width: 30ch; margin: 20px 0 0; color: #eee1d6; font-size: 13px; line-height: 1.7; }
+.programme-options { padding: 100px 10%; }
+.programme-section-heading { display: grid; grid-template-columns: 1fr 1fr; align-items: end; margin-bottom: 55px; }
+.programme-section-heading .eyebrow { grid-column: 1 / -1; }
+.programme-section-heading h2 { grid-column: 1; font-size: clamp(48px, 6vw, 82px); }
+.programme-options-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px; }
+.programme-option { padding: 25px 0 0; }
+.programme-option h3 { margin: 0 0 15px; font-size: 21px; letter-spacing: -.045em; }
+.programme-option p { max-width: 25ch; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.teaching-approach { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding: 100px 10%; background: var(--peach-soft); }
+.teaching-approach-heading h2, .whole-child-intro h2, .readiness-heading h2 { font-size: clamp(48px, 6vw, 82px); }
+.teaching-approach-copy { max-width: 500px; align-self: end; }
+.teaching-approach-copy p { margin: 0 0 22px; color: #5e493c; font-size: 14px; line-height: 1.9; }
+.teaching-approach-copy p:last-child { margin-bottom: 0; }
+.whole-child { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding: 100px 10%; background: var(--butter); }
+.development-areas { display: grid; grid-template-columns: 1fr 1fr; gap: 0 36px; align-content: center; }
+.development-areas p { margin: 0; padding: 17px 0; font-size: 16px; font-weight: 650; letter-spacing: -.02em; }
+.school-readiness { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding: 100px 10%; }
+.readiness-content { align-self: end; }
+.readiness-intro { max-width: 35ch; margin: 0 0 23px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.readiness-content ul { display: grid; grid-template-columns: 1fr 1fr; gap: 17px 30px; margin: 0; padding: 0; list-style: none; }
+.readiness-content li { font-size: 13px; line-height: 1.7; }
+.progress-reports { display: grid; grid-template-columns: .45fr 1fr; gap: 8%; align-items: start; padding: 75px 10%; background: var(--peach); }
+.progress-reports .eyebrow { margin-top: 9px; }
+.progress-reports h2 { max-width: 820px; margin: 0; font-size: clamp(30px, 4vw, 52px); line-height: 1.05; letter-spacing: -.06em; }
+.programmes-cta { display: flex; flex-direction: column; align-items: flex-start; padding: 100px 10%; background: var(--ink); color: var(--paper); }
+.programmes-cta .eyebrow { color: #e2b99b; }
+.programmes-cta h2 { font-size: clamp(58px, 7vw, 96px); margin-bottom: 32px; }
 .placeholder-page { min-height: clamp(320px, 48vh, 620px); background: var(--paper); }
 
 .site-footer { display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 44px 8%; padding: 58px 8% 25px; background: var(--paper); border-top: 1px solid #e8ded2; }
@@ -122,6 +158,8 @@ a { color: inherit; text-decoration: none; }
   .reasons-section { padding-inline: 7%; }
   .reasons-grid { column-gap: 22px; }
   .reason-card h3 { font-size: 14px; }
+  .programme-options, .teaching-approach, .whole-child, .school-readiness { padding-inline: 7%; }
+  .programme-options-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px; }
 }
 
 @media (max-width: 700px) {
@@ -154,6 +192,25 @@ a { color: inherit; text-decoration: none; }
   .header-cta-arrow { display: inline-flex; align-items: center; justify-content: center; font-size: 20px; line-height: 1; }
   .hero { grid-template-columns: 1fr; }
   .hero-copy { padding: 64px 7% 52px; min-height: auto; }
+  .programmes-hero { grid-template-columns: 1fr; }
+  .programmes-hero-copy { min-height: 390px; padding: 64px 7%; }
+  .programmes-hero-copy h1 { font-size: clamp(52px, 13.3vw, 68px); }
+  .programmes-hero-note { min-height: 270px; padding: 42px 7%; }
+  .programmes-hero-note span { max-width: 10ch; font-size: 48px; }
+  .programme-options, .teaching-approach, .whole-child, .school-readiness { grid-template-columns: 1fr; gap: 30px; padding: 64px 7%; }
+  .programme-section-heading { display: block; margin-bottom: 28px; }
+  .programme-section-heading h2, .teaching-approach-heading h2, .whole-child-intro h2, .readiness-heading h2 { font-size: clamp(40px, 10.8vw, 52px); }
+  .programme-options-grid { grid-template-columns: 1fr; gap: 15px; }
+  .programme-option { padding-top: 8px; }
+  .programme-option h3 { margin-bottom: 8px; font-size: 19px; }
+  .programme-option p, .teaching-approach-copy p, .readiness-intro, .readiness-content li { font-size: 14px; }
+  .development-areas { grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  .development-areas p { padding: 13px 0; font-size: 14px; }
+  .readiness-content ul { grid-template-columns: 1fr; gap: 12px; }
+  .progress-reports { grid-template-columns: 1fr; gap: 4px; padding: 56px 7%; }
+  .progress-reports h2 { font-size: clamp(30px, 8vw, 40px); }
+  .programmes-cta { padding: 64px 7%; }
+  .programmes-cta h2 { font-size: clamp(42px, 10.5vw, 56px); }
   .eyebrow { font-weight: 800; }
   .text-link { font-weight: 800; }
   .hero .eyebrow { margin-bottom: 18px; }
