@@ -212,7 +212,7 @@ export function SiteHeader() {
             className="brand-logo"
             priority
           />
-          <span className="brand-name">TRUNK<br />ACADEMY</span>
+          <span className="brand-name">Trunk Academy</span>
         </Link>
         <nav aria-label="Main navigation" className="main-nav">
           {navigation.map(({ label, href }) => (
@@ -232,7 +232,7 @@ export function SiteHeader() {
         >
           <span className="menu-icon" aria-hidden="true"><span /><span /><span /></span>
         </button>
-        <Link className="header-cta" href="/contact" aria-label="Come say hello"><span className="header-cta-label">Come say hello</span><span className="header-cta-arrow" aria-hidden="true">→</span></Link>
+        <Link className="header-cta" href="/contact" aria-label="Get in touch with us"><span className="header-cta-label">Get in touch with us</span><span className="header-cta-arrow" aria-hidden="true">→</span></Link>
       </header>
 
       <div
@@ -274,8 +274,8 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="mobile-menu-footer">
-            <p>Little beginnings, cared for with love.</p>
-            <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Come say hello</Link>
+            <p>The start of something beautiful.</p>
+            <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Get in touch with us</Link>
           </div>
         </div>
       </div>

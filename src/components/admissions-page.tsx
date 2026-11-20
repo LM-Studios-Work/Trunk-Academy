@@ -3,23 +3,23 @@ import Image from "next/image";
 const enrolmentSteps = [
   {
     title: "Get in touch",
-    detail: "Ask about availability or arrange a visit.",
+    detail: "Ask about availability, get guidance on the right programme for your family, or arrange a visit.",
   },
   {
-    title: "Complete the form",
-    detail: "Choose Full Day, Half Day or Day Visit, and add your child’s and family’s details.",
+    title: "Complete the registration / enrollment form",
+    detail: "Choose between the Full Day, Half Day, Hybrid or Day Visit programme, and complete your child’s and family’s details.",
   },
   {
-    title: "Send your documents",
-    detail: "A copy of your child’s birth certificate and immunisation card, plus a copy of the parent’s ID.",
+    title: "Send your completed form and supporting documents physically or electronically via WhatsApp or email",
+    detail: "Supporting documents include copies of your child’s birth certificate and immunisation card, plus a copy of the parent’s or guardian’s ID.",
   },
   {
-    title: "Pay before day one",
-    detail: "One month’s fees plus the registration fee are due before your child’s first day.",
+    title: "Pay before your child’s first day",
+    detail: "All fees are paid in advance, before your child’s first day, along with the once-off annual registration fee depending on your selected programme. We are a cashless environment so please pay directly into the creche bank account.",
   },
   {
-    title: "Join the family",
-    detail: "We’ll be ready to welcome your child to Trunk Academy.",
+    title: "Your child’s first day",
+    detail: "Everything is ready, and we can’t wait to meet your little one. It’s the start of something beautiful.",
   },
 ];
 
@@ -67,7 +67,7 @@ export function AdmissionsPage() {
     <main className="admissions-page">
       <section className="admissions-hero" aria-labelledby="admissions-title">
         <div>
-          <p className="eyebrow">Admissions & enrolment</p>
+          <p className="eyebrow">Registration and enrollment</p>
           <h1 id="admissions-title">A simple path<br />to their next<br />beginning.</h1>
         </div>
         <div className="admissions-hero-copy">
@@ -109,7 +109,7 @@ export function AdmissionsPage() {
             <p className="eyebrow">Five steps to get started</p>
             <h2 id="enrolment-steps-title">From hello<br />to day one.</h2>
           </div>
-          <p>Have a question or want to arrange a visit? WhatsApp us on <a href={whatsappLink("Hi Trunk Academy, I’d like to ask about enrolment.")} target="_blank" rel="noopener noreferrer">081 351 4996</a>.</p>
+          <p>Thank you for considering Trunk Academy for your little one. Have a question or want to arrange a visit? <a href={whatsappLink("Hi Trunk Academy, I’d like to ask about enrolment.")} target="_blank" rel="noopener noreferrer">WhatsApp us</a> or call <a href="tel:+27813514996">081 351 4996</a>.</p>
         </div>
         <ol className="admissions-steps-grid">
           {enrolmentSteps.map(({ title, detail }) => (
@@ -123,16 +123,17 @@ export function AdmissionsPage() {
 
       <section className="admissions-body-feature" id="admissions-visit" aria-labelledby="admissions-visit-title">
         <div className="admissions-body-copy">
-          <p className="eyebrow">Come see our space</p>
-          <h2 id="admissions-visit-title">See where their<br />day happens.</h2>
-          <p>We welcome children from 3 months to 5 years across Full Day, Half Day, Hybrid and Day Visit options. Arrange a visit to see our classrooms and play areas in Cosmo City and meet the team before your child’s first day.</p>
+          <p className="eyebrow">Come See Where Your Child Will Grow</p>
+          <h2 id="admissions-visit-title">The best way to know if Trunk Academy is right for your family is to see it for yourself.</h2>
+          <p>Choosing a creche is a big decision, and we would love for you to feel confident making it. Visit us to walk through our bright classrooms, explore our outdoor play area and meet the caring teachers who will look after your little one.</p>
+          <p className="admissions-body-prompt">Anything else on your mind?</p>
           <a
             className="text-link"
             href={whatsappLink("Hi Trunk Academy, I’d like to arrange a visit to see the school.")}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Arrange a school visit on WhatsApp
+            Reach out to us.
           </a>
         </div>
         <div className="admissions-body-photo">
@@ -148,7 +149,7 @@ export function AdmissionsPage() {
       <section className="admissions-fees" id="admissions-fees" aria-labelledby="fees-policies-title">
         <div className="admissions-fees-heading">
           <p className="eyebrow">Clear from the start</p>
-          <h2 id="fees-policies-title">Fees & policies<br />at a glance.</h2>
+          <h2 id="fees-policies-title">Fees and policies<br />at a glance.</h2>
           <p>Your child’s monthly fee is confirmed in the Fee Schedule when you enrol.</p>
           <a className="text-link" href={whatsappLink("Hi Trunk Academy, could you please share the current fees?")} target="_blank" rel="noopener noreferrer">Ask us for current fees</a>
         </div>

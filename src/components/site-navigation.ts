@@ -1,8 +1,8 @@
 export const navigation = [
-  { label: "Home", href: "/" },
+  { label: "About Us", href: "/" },
   { label: "Programmes", href: "/programmes" },
-  { label: "Nutrition & Safety", href: "/nutrition-safety" },
-  { label: "Admissions", href: "/admissions" },
+  { label: "Nutrition and Safety", href: "/nutrition-safety" },
+  { label: "Registration and Enrollment", href: "/admissions" },
   { label: "Contact", href: "/contact" },
-  { label: "Partners & Donors", href: "/partners-donors" },
+  { label: "Sponsor, Donate or Partner With Us", href: "/partners-donors" },
 ];

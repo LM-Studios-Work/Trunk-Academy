@@ -16,21 +16,33 @@ const staticPages = [
 ];
 
 const programmeOptions = [
-  { title: "Full Day", description: "Our complete day of care and learning, Monday to Friday, with cooked meals included." },
-  { title: "Half Day", description: "A shorter day with the same caring, structured learning and play." },
-  { title: "Hybrid", description: "A flexible mix of days to suit working families." },
-  { title: "Day Visit", description: "Occasional care for children who do not attend every week." },
+  { title: "Full Day", description: "Your child enjoys a complete day of learning, play, meals and rest, ideal for working parents." },
+  { title: "Half Day", description: "A shorter morning programme that gives your child structured play and learning, with time at home for the rest of the day." },
+  { title: "Hybrid", description: "A flexible mix of days and hours, so you can build a weekly routine that works around your family." },
+  { title: "Day Visit", description: "Drop in for a single day to let your child experience our classrooms, play area and teachers, or to cover those occasional days you need extra support." },
 ];
 
-const developmentAreas = ["Cognitive development", "Social development", "Emotional development", "Physical development", "Creative development"];
-
-const schoolReadiness = [
-  "Independence and self-help skills",
-  "Following multi-step directions",
-  "Sitting and focusing during group activities",
-  "Social skills for classroom environments",
-  "A basic academic foundation in literacy and numeracy",
-  "Enthusiasm and confidence about learning",
+const developmentAreas = [
+  {
+    title: "Growing Minds",
+    description: "Through stories, songs, puzzles and hands-on activities, children build early language, number skills and a love of learning.",
+  },
+  {
+    title: "Growing Bodies",
+    description: "Outdoor play and movement help little ones develop strength, coordination and healthy habits, supported by nutritious meals each day.",
+  },
+  {
+    title: "Growing Hearts",
+    description: "Children learn to share, take turns, show kindness and express their feelings in a safe, caring environment.",
+  },
+  {
+    title: "Growing in Faith",
+    description: "Gentle Christian teaching and values shape character, helping children learn love, gratitude and respect.",
+  },
+  {
+    title: "Growing in Confidence",
+    description: "With encouragement from our teachers, children try new things, ask questions and discover what they can do.",
+  },
 ];
 
 export function generateStaticParams() {
@@ -94,9 +106,9 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
       <main className="programmes-page">
         <section className="programmes-hero">
           <div className="programmes-hero-copy">
-            <p className="eyebrow">Babyhouse to Grade RR</p>
-            <h1>Learning starts<br />with play.</h1>
-            <p>Play-based early learning for babies, toddlers and preschoolers, from Babyhouse to Grade RR.</p>
+            <p className="eyebrow">Learning happens through play</p>
+            <h1>Where curious little minds explore, imagine and grow.</h1>
+            <p>At Trunk Academy, we believe play is how children learn best. Through building, pretending, singing, sharing and exploring, little ones develop the skills they need for school and for life, all while having fun.</p>
           </div>
           <div className="programmes-hero-image">
             <Image
@@ -106,14 +118,14 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
               priority
               sizes="(max-width: 700px) 100vw, 50vw"
             />
-            <p>Learning through play, every day.</p>
+            <p>Play Is How We Learn</p>
           </div>
         </section>
 
         <section className="programme-options" id="programme-options" aria-labelledby="programme-options-title">
           <div className="programme-section-heading">
             <p className="eyebrow">Our programme options</p>
-            <h2 id="programme-options-title">A day that fits<br />your family.</h2>
+            <h2 id="programme-options-title">We offer flexible options to suit your schedule and your child’s needs.</h2>
           </div>
           <div className="programme-options-grid">
             {programmeOptions.map(({ title, description }) => (
@@ -136,40 +148,47 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
           <div className="teaching-approach-content">
             <div className="teaching-approach-heading">
-              <p className="eyebrow">How children learn</p>
-              <h2 id="teaching-approach-title">Play is how<br />we begin.</h2>
+              <p className="eyebrow">How Children Grow at Trunk Academy</p>
+              <h2 id="teaching-approach-title">Nurtured in mind,<br />body, heart<br />and spirit.</h2>
             </div>
             <div className="teaching-approach-copy">
-              <p>Play is the primary way young children learn. Our curriculum weaves learning into enjoyable, meaningful experiences, and our daily schedule balances structured learning time with child-directed play so children stay engaged and enthusiastic.</p>
-              <p>We celebrate diversity and bring multicultural perspectives into the classroom, helping children develop respect and appreciation for all people.</p>
+              <p>Every child grows at their own pace and we celebrate each step. At Trunk Academy, we nurture the whole child through play, loving guidance and Christian values, so they are ready for school and for life.</p>
+            </div>
+            <div className="teaching-growth-grid">
+              {developmentAreas.map(({ title, description }) => (
+                <article key={title}>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
 
         <section className="whole-child" id="whole-child" aria-labelledby="whole-child-title">
           <div className="whole-child-intro">
-            <p className="eyebrow">Growing in every direction</p>
-            <h2 id="whole-child-title">The whole<br />child matters.</h2>
+            <p className="eyebrow">Supporting Every Stage of Your Child’s Development</p>
+            <h2 id="whole-child-title">Cognitive, emotional, creative, physical and social growth, nurtured through play.</h2>
           </div>
           <div className="development-areas">
-            {developmentAreas.map((area) => <p key={area}>{area}</p>)}
+            <p>When children are supported in every area of growth, they flourish.</p>
+            <p>We share a progress report twice a month on your child’s development, and we meet with you one-on-one to celebrate their growth and plan the way forward together.</p>
           </div>
         </section>
 
         <section className="school-readiness" id="school-readiness" aria-labelledby="school-readiness-title">
           <div className="readiness-heading">
-            <p className="eyebrow">For our older preschoolers</p>
-            <h2 id="school-readiness-title">Ready for<br />what comes next.</h2>
+            <p className="eyebrow">Ready for Primary School</p>
+            <h2 id="school-readiness-title">Preparing our school-bound learners for a confident start in primary school.</h2>
           </div>
           <div className="readiness-content">
-            <p className="readiness-intro">We prepare our oldest children for primary school success by building:</p>
-            <ul>{schoolReadiness.map((skill) => <li key={skill}>{skill}</li>)}</ul>
+            <p className="readiness-intro">As our school-bound learners get ready for Grade R and primary school, we gently build the skills they need to step forward with confidence. Through play-based activities, they strengthen early literacy and numeracy, fine-motor skills, listening, concentration and independence, along with the social and emotional skills that help them settle into a new classroom.</p>
           </div>
         </section>
 
-        <section className="progress-reports" id="progress-reports" aria-label="Progress reports">
-          <p className="eyebrow">Growing, together</p>
-          <h2>Every child receives a report twice a year, so you always know how they are growing.</h2>
+        <section className="progress-reports" id="progress-reports" aria-label="Fees that fit your family">
+          <p className="eyebrow">Fees That Fit Your Family</p>
+          <h2>Our fees vary depending on the programme you select, so you can choose the option that best suits your child and your family’s schedule. We also offer a sibling discount for families with more than one child at Trunk Academy.</h2>
         </section>
 
         <section className="programmes-cta" id="programmes-cta">

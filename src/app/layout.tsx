@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Trunk Academy | Babyhouse & Preschool in Cosmo City",
-  description: "A warm, play-based babyhouse and preschool in Cosmo City, Randburg, caring for children from 3 months to 5 years.",
+  description: "A warm, play-based babyhouse and preschool in Cosmo City, Roodepoort, caring for children from 3 months to 5 years.",
   icons: {
     icon: "/trunk academy logo.png",
     apple: "/trunk academy logo.png",

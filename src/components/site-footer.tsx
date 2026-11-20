@@ -17,9 +17,9 @@ export function SiteFooter() {
             height={69}
             className="brand-logo footer-brand-logo"
           />
-          <span className="brand-name">TRUNK<br />ACADEMY</span>
+          <span className="brand-name">Trunk Academy</span>
         </Link>
-        <p>Little beginnings, cared for with love.</p>
+        <p>The start of something beautiful.</p>
       </div>
       <nav aria-label="Footer navigation" className="footer-navigation">
         <div className="footer-group">
@@ -33,7 +33,7 @@ export function SiteFooter() {
       </nav>
       <div className="footer-bottom">
         <div className="footer-bottom-main">
-          <p className="footer-copy">© {new Date().getFullYear()} Trunk Academy</p>
+          <p className="footer-copy">© {new Date().getFullYear()} Trunk Academy · NPO 269-171</p>
           <a href="#top" className="footer-top">Back to top</a>
         </div>
         <div className="footer-credit">

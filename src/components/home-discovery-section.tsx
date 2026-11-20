@@ -13,9 +13,9 @@ export function HomeDiscoverySection() {
         />
       </div>
       <div className="learning-copy">
-        <p className="eyebrow">Little discoveries, every day</p>
+        <p className="eyebrow">Daily adventures everyday</p>
         <h2 id="learning-heading">A place to wonder.</h2>
-        <p>Our classroom and garden make room for hands-on discovery, new friendships, and the small wins that build confidence.</p>
+        <p>Our bright, welcoming classrooms and spacious outdoor play area are wonderful places for children to explore, wonder and discover something new every day.</p>
         <Link className="text-link" href="/programmes">Explore our programmes</Link>
       </div>
     </section>
