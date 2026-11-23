@@ -13,13 +13,13 @@ export function SiteFooter() {
           <Image
             src="/trunk academy logo.png"
             alt="Trunk Academy logo"
-            width={46}
-            height={69}
+            width={68}
+            height={102}
             className="brand-logo footer-brand-logo"
           />
           <span className="brand-name">Trunk Academy</span>
         </Link>
-        <p>The start of something beautiful.</p>
+        <p>The start of something beautiful</p>
       </div>
       <nav aria-label="Footer navigation" className="footer-navigation">
         <div className="footer-group">

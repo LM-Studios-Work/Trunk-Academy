@@ -1,6 +1,33 @@
 const whatsappLink = "https://wa.me/27813514996?text=Hi%20Trunk%20Academy%2C%20I%E2%80%99d%20like%20to%20get%20in%20touch.";
 const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("3184 Croatia Street, Cosmo City Ext 3, Roodepoort, Johannesburg, 2188")}`;
 
+const socialLinks = [
+  {
+    platform: "Pinterest",
+    handle: "trunkacademy",
+    href: "https://www.pinterest.com/trunkacademy/",
+    icon: "fa-brands fa-pinterest",
+  },
+  {
+    platform: "TikTok",
+    handle: "trunkacademypreschool",
+    href: "https://www.tiktok.com/@trunkacademypreschool",
+    icon: "fa-brands fa-tiktok",
+  },
+  {
+    platform: "Instagram",
+    handle: "trunk.academy",
+    href: "https://www.instagram.com/trunk.academy/",
+    icon: "fa-brands fa-instagram",
+  },
+  {
+    platform: "Facebook",
+    handle: "trunkacademy",
+    href: "https://www.facebook.com/trunkacademy/",
+    icon: "fa-brands fa-facebook",
+  },
+];
+
 export function ContactPage() {
   return (
     <main className="contact-page">
@@ -69,6 +96,27 @@ export function ContactPage() {
           <p className="eyebrow">Hours</p>
           <h2>Monday to Friday</h2>
           <p className="contact-hours">06h30 – 17h30</p>
+        </article>
+        <article className="contact-social-article">
+          <p className="eyebrow">Connect with us on social media</p>
+          <div className="contact-social-grid">
+            {socialLinks.map(({ platform, handle, href, icon }) => (
+              <a
+                key={platform}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-social-link"
+                aria-label={`${platform}: ${handle}`}
+              >
+                <i className={icon} aria-hidden="true" />
+                <span className="contact-social-text">
+                  <strong>{platform}</strong>
+                  <span>{handle}</span>
+                </span>
+              </a>
+            ))}
+          </div>
         </article>
       </section>
 

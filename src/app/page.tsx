@@ -12,15 +12,15 @@ const facts = [
   ["Grades", "RRRR to RR"],
   ["Programmes", "Full day, half day, hybrid"],
   ["Hours", "Monday – Friday, 06h30 – 17h30"],
-  ["Meals", "We provide all meals for your little one, including a cooked breakfast, a hot lunch and an afternoon snack with water, rooibos and fresh fruit served throughout the day"],
-  ["Language", "English"],
+  ["Meals", "We provide a cooked breakfast and lunch, afternoon snack and fruit. These meals are served with either water, rooibos tea or juice at different parts of the day."],
+  ["Language of Instruction", "English"],
 ];
 
 const reasons = [
   { title: "Every child is seen", text: "We get to know each little personality, then encourage each child to grow at their own pace." },
-  { title: "Nourishment made fresh", text: "We provide all meals for your little one, including a cooked breakfast, a hot lunch and an afternoon snack with water, rooibos and fresh fruit served throughout the day." },
+  { title: "Nourishment made fresh", text: "We provide a cooked breakfast and lunch, afternoon snack and fruit. These meals are served with either water, rooibos tea or juice at different parts of the day." },
   { title: "Learning through play", text: "Everyday play, creativity and friendship help children build skills for life." },
-  { title: "A partnership with each family", text: "Our door is always open. We work closely with families, with care and respect." },
+  { title: "A partnership with each family", text: "We work closely with families, with care and respect." },
 ];
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div className="hero-image-wrap">
           <Image className="hero-image" src={photos.hero} alt="A smiling young child enjoying a playful moment" fill priority sizes="(max-width: 700px) 100vw, 50vw" />
-          <div className="image-caption"><span>The start of something beautiful.</span><span>Cosmo City, Johannesburg</span></div>
+          <div className="image-caption"><span>The start of something beautiful</span><span>Cosmo City, Johannesburg</span></div>
         </div>
       </section>
 
@@ -52,7 +52,7 @@ export default function Home() {
 
       <section className="welcome-section" id="welcome">
         <div className="welcome-photo"><Image src={photos.friends} alt="Two preschool friends playing together" fill sizes="(max-width: 700px) 100vw, 50vw" /></div>
-        <div className="welcome-copy" id="our-home"><p className="eyebrow">Thank you for considering Trunk Academy for your little one.</p><h2>A gentle place<br />to find their feet.</h2><p>Leaving your child in someone else’s care is a big step. We understand the trust it takes, and we meet it with a warm welcome, familiar faces and days full of discovery.</p><p>Our values-led approach is rooted in a Christian ethos, while celebrating and respecting every culture and family.</p><div className="signature"><span>Warm regards, <strong>Thembi and the team</strong></span></div></div>
+        <div className="welcome-copy" id="our-home"><p className="eyebrow">Thank you for considering Trunk Academy for your little one.</p><h2>A gentle place<br />to find their feet.</h2><p>Leaving your child in someone else’s care is a big step. We understand the trust it takes, and we meet it with a warm welcome, familiar faces and days full of discovery.</p><p>Our values-led approach is rooted in a Christian ethos, while celebrating and respecting every culture and family.</p></div>
       </section>
 
       <section className="reasons-section" id="programmes">

@@ -38,7 +38,7 @@ const feePolicies = [
   },
   {
     title: "Late collection",
-    detail: "Collection after 17h30 costs R50 for every 15 minutes.",
+    detail: "An additional fee is charged for collection after the creche closing time for every 15 minutes late or part thereof.",
   },
   {
     title: "Notice to deregister",
@@ -53,7 +53,7 @@ const feePolicies = [
 const questions = [
   { question: "What ages do you accept?", answer: "We welcome children from 3 months to 5 years." },
   { question: "What are your operating hours?", answer: "Monday to Friday, 06h30 to 17h30, excluding public holidays." },
-  { question: "Are meals included?", answer: "Yes. Children have cooked breakfast and lunch, fresh fruit, water, juice and rooibos." },
+  { question: "Are meals included?", answer: "Yes, meals include a cooked breakfast, lunch, afternoon snack and fruit. We also serve water, rooibos tea and juice throughout the day." },
   { question: "What language do you teach in?", answer: "Our language of instruction is English." },
   { question: "How often will I get a progress report?", answer: "We share a progress report twice a year." },
 ];

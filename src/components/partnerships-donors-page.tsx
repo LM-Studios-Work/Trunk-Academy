@@ -37,15 +37,6 @@ const howDonationHelps = [
   "A safe, bright place to explore, wonder and grow",
 ];
 
-const donationDetails = [
-  { label: "Account name", value: "Trunk Academy Babyhouse and Preschool" },
-  { label: "Bank", value: "Standard Bank" },
-  { label: "Account number", value: "10187826941" },
-  { label: "Branch code", value: "051001" },
-  { label: "Account Type", value: "Cheque / Current Account" },
-  { label: "Reference", value: "[Donation + your name or company name]" },
-];
-
 const whyPartner = [
   "Trusted and registered non-profit organisation (NPO 269-171)",
   "Christian-ethos, play-based approach to early learning",
@@ -62,7 +53,7 @@ const waysToPartner = [
 ];
 
 const whatsappLink = "https://wa.me/27813514996?text=Hi%20Trunk%20Academy%2C%20I%E2%80%99d%20like%20to%20talk%20about%20a%20partnership%20or%20sponsorship.";
-const donationFollowUpLink = "https://wa.me/27813514996?text=Hi%20Trunk%20Academy%2C%20I%E2%80%99ve%20made%20a%20donation%20and%20would%20like%20to%20let%20you%20know.";
+const donationEnquiryLink = "https://wa.me/27813514996?text=Hi%20Trunk%20Academy%2C%20I%E2%80%99d%20like%20to%20make%20a%20donation%20enquiry.";
 
 export function PartnershipsDonorsPage() {
   return (
@@ -132,16 +123,8 @@ export function PartnershipsDonorsPage() {
         <div className="donation-how-block">
           <h3 className="donation-how-title">How to donate</h3>
           <p className="donation-how-note">We are a cashless organisation, so all donations are made by direct bank transfer.</p>
-          <dl className="donation-details">
-            {donationDetails.map(({ label, value }) => (
-              <div key={label}>
-                <dt>{label}</dt>
-                <dd>{value}</dd>
-              </div>
-            ))}
-          </dl>
           <p className="donation-how-followup">
-            After you donate please send your proof of payment and contact details to <a href="mailto:info@trunkacademy.org.za">info@trunkacademy.org.za</a> or WhatsApp <a href={donationFollowUpLink} target="_blank" rel="noopener noreferrer">081 351 4996</a>, so we can acknowledge your donation.
+            Please make an enquiry with us before donating via <a href="mailto:info@trunkacademy.org.za">info@trunkacademy.org.za</a> or WhatsApp <a href={donationEnquiryLink} target="_blank" rel="noopener noreferrer">081 351 4996</a>, and we will share our banking details directly with you.
           </p>
           <p className="donation-how-thanks">Thank you for helping us make it the start of something beautiful.</p>
         </div>
@@ -175,7 +158,7 @@ export function PartnershipsDonorsPage() {
 
       <section className="partnerships-cta" id="partnerships-cta" aria-labelledby="partnerships-cta-title">
         <div className="partnerships-cta-copy">
-          <p className="eyebrow">Interested in a partnership or sponsorship?</p>
+          <p className="eyebrow">Interested in sponsoring, donating or partnering with us?</p>
           <h2 id="partnerships-cta-title">Together, we can make it the start of something beautiful.</h2>
           <p>Trunk Academy is a registered non-profit organisation (NPO 269-171) nurturing children through loving, faith-based care and learning through play. Whether you sponsor a child’s start, donate to support meals and learning resources, or partner with us on a project, your support helps us uplift education and contribute to the Sustainable Development Goals, especially Quality Education, Zero Hunger and Good Health and Well-being.</p>
         </div>

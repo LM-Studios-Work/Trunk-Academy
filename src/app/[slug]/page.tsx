@@ -8,11 +8,14 @@ import { NutritionSafetyPage } from "@/components/nutrition-safety-page";
 import { PartnershipsDonorsPage } from "@/components/partnerships-donors-page";
 
 const staticPages = [
-  { slug: "programmes", title: "Programmes & Curriculum" },
-  { slug: "nutrition-safety", title: "Nutrition, Health & Safety" },
-  { slug: "admissions", title: "Admissions" },
+  { slug: "programmes", title: "Programmes" },
+  { slug: "nutrition-and-safety", title: "Nutrition and Safety" },
+  { slug: "nutrition-safety", title: "Nutrition and Safety" },
+  { slug: "registration-and-enrollment", title: "Registration and Enrollment" },
+  { slug: "admissions", title: "Registration and Enrollment" },
   { slug: "contact", title: "Contact" },
-  { slug: "partners-donors", title: "Partners & Donors" },
+  { slug: "sponsor-donate-or-partner-with-us", title: "Sponsor, Donate or Partner With Us" },
+  { slug: "partners-donors", title: "Sponsor, Donate or Partner With Us" },
 ];
 
 const programmeOptions = [
@@ -53,9 +56,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const page = staticPages.find((item) => item.slug === slug);
 
-  if (slug === "admissions") {
+  if (slug === "admissions" || slug === "registration-and-enrollment") {
     return {
-      title: "Admissions & Enrolment | Trunk Academy",
+      title: "Registration and Enrollment | Trunk Academy",
       description: "Find out how to enrol at Trunk Academy, review fees and policies, and ask about availability or a visit.",
     };
   }
@@ -67,23 +70,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
-  if (slug === "partners-donors") {
+  if (slug === "partners-donors" || slug === "sponsor-donate-or-partner-with-us") {
     return {
-      title: "Sponsorship, Partnerships & Donors | Trunk Academy",
+      title: "Sponsor, Donate or Partner With Us | Trunk Academy",
       description: "Support early learning in Cosmo City through meal sponsorships, learning resources, facilities, partnerships, goods or time.",
     };
   }
 
-  if (slug === "nutrition-safety") {
+  if (slug === "nutrition-safety" || slug === "nutrition-and-safety") {
     return {
-      title: "Nutrition, Health & Safety | Trunk Academy",
+      title: "Nutrition and Safety | Trunk Academy",
       description: "Learn about Trunk Academy’s fresh daily meals, health information, safety routines and family communication.",
     };
   }
 
   if (slug === "programmes") {
     return {
-      title: "Programmes & Curriculum | Trunk Academy",
+      title: "Programmes | Trunk Academy",
       description: "Explore Trunk Academy's play-based early learning approach and programme options for babies, toddlers and preschoolers.",
     };
   }
@@ -95,11 +98,11 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
   const { slug } = await params;
   const page = staticPages.find((item) => item.slug === slug);
 
-  if (slug === "admissions") return <AdmissionsPage />;
+  if (slug === "admissions" || slug === "registration-and-enrollment") return <AdmissionsPage />;
   if (slug === "contact") return <ContactPage />;
-  if (slug === "partners-donors") return <PartnershipsDonorsPage />;
+  if (slug === "partners-donors" || slug === "sponsor-donate-or-partner-with-us") return <PartnershipsDonorsPage />;
 
-  if (slug === "nutrition-safety") return <NutritionSafetyPage />;
+  if (slug === "nutrition-safety" || slug === "nutrition-and-safety") return <NutritionSafetyPage />;
 
   if (slug === "programmes") {
     return (
@@ -172,7 +175,7 @@ export default async function PlaceholderPage({ params }: { params: Promise<{ sl
           </div>
           <div className="development-areas">
             <p>When children are supported in every area of growth, they flourish.</p>
-            <p>We share a progress report twice a month on your child’s development, and we meet with you one-on-one to celebrate their growth and plan the way forward together.</p>
+            <p>We share a progress report twice a year on your child’s development, and we meet with you one-on-one to celebrate their growth and plan the way forward together.</p>
           </div>
         </section>
 

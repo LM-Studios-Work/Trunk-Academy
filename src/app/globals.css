@@ -19,11 +19,13 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--navbar-height, 88px); 
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-weight: 300; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 
-.site-header { min-height: 88px; padding: 0 6.5%; display: flex; align-items: center; justify-content: space-between; background: var(--paper); position: sticky; top: 0; z-index: 40; border-bottom: 1px solid rgba(50, 30, 20, 0.06); }
-.brand { display: inline-flex; align-items: center; gap: 10px; flex: none; text-decoration: none; color: inherit; }
-.brand-logo { width: auto; height: 50px; object-fit: contain; display: block; }
-.brand-name { font-size: 13px; line-height: .94; letter-spacing: .055em; font-weight: 800; white-space: nowrap; }
-.main-nav { display: flex; align-items: center; gap: clamp(10px, 1.4vw, 24px); }
+.site-header { min-height: 96px; padding: 10px 5.5%; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: var(--paper); position: sticky; top: 0; z-index: 40; border-bottom: 1px solid rgba(50, 30, 20, 0.06); }
+.brand { display: inline-flex; align-items: center; gap: 14px; flex: none; text-decoration: none; color: inherit; }
+.brand-logo { width: auto; height: 72px; object-fit: contain; display: block; }
+.brand-text { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+.brand-name { font-size: 14px; line-height: 1.05; letter-spacing: .02em; font-weight: 800; white-space: nowrap; }
+.brand-slogan { font-size: 10px; line-height: 1.2; letter-spacing: .01em; font-weight: 500; color: var(--muted); white-space: nowrap; }
+.main-nav { display: flex; align-items: center; justify-content: flex-end; gap: clamp(10px, 1.35vw, 22px); margin-left: auto; }
 .main-nav a, .header-cta { font-size: 11px; font-weight: 600; white-space: nowrap; }
 .main-nav a { color: #554237; transition: color .2s; }
 .main-nav a:hover, .main-nav a:focus-visible, .main-nav a[aria-current="page"] { color: var(--clay); }
@@ -235,6 +237,14 @@ a { color: inherit; text-decoration: none; }
 .contact-details address { color: var(--ink); font-size: 16px; font-style: normal; line-height: 1.75; }
 .contact-detail-link { display: inline-block; margin-top: 13px; color: var(--ink); font-size: 13px; font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
 .contact-hours { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+.contact-social-article { grid-column: 1 / -1; }
+.contact-social-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 32px; margin-top: 6px; }
+.contact-social-link { display: inline-flex; align-items: center; gap: 14px; color: var(--ink); transition: color .2s; }
+.contact-social-link:hover, .contact-social-link:focus-visible { color: var(--clay); }
+.contact-social-link i { font-size: 24px; line-height: 1; flex: none; }
+.contact-social-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.contact-social-text strong { font-size: 15px; font-weight: 750; letter-spacing: -.03em; }
+.contact-social-text span { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
 .contact-map-section { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; background: var(--peach-soft); }
 .contact-map-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(60px, 8vw, 105px) 12%; }
 .contact-map-copy .eyebrow { margin-bottom: 22px; }
@@ -300,7 +310,7 @@ a { color: inherit; text-decoration: none; }
 
 .site-footer { display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 44px 8%; padding: 58px 8% 25px; background: var(--paper); border-top: 1px solid #e8ded2; }
 .footer-brand-block { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
-.footer-brand-logo { width: auto; height: 52px; object-fit: contain; }
+.footer-brand-logo { width: auto; height: 76px; object-fit: contain; }
 .footer-brand-block p { max-width: 190px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .footer-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .footer-group { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
@@ -339,7 +349,8 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 700px) {
   :root { --navbar-height: 74px; }
-  .site-header { min-height: 70px; padding: 12px 6%; flex-wrap: nowrap; align-items: center; gap: 12px; }
+  .site-header { min-height: 78px; padding: 10px 6%; flex-wrap: nowrap; align-items: center; gap: 12px; }
+  .brand-logo { height: 58px; }
   .main-nav { display: none; }
   .mobile-menu-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex: none; margin-left: auto; padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
   .menu-icon { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 5px; width: 24px; height: 24px; }
@@ -355,7 +366,7 @@ a { color: inherit; text-decoration: none; }
   .mobile-menu-layer.is-open .mobile-menu-drawer { transform: translateX(0); }
   .mobile-menu-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
   .mobile-menu-brand { display: inline-flex; align-items: center; gap: 10px; }
-  .mobile-menu-logo { width: auto; height: 38px; object-fit: contain; }
+  .mobile-menu-logo { width: auto; height: 54px; object-fit: contain; }
   .mobile-menu-heading p { margin: 0; font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
   .mobile-menu-close { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex: none; padding: 0 0 3px; border: 1px solid currentColor; border-radius: 9999px; background: transparent; color: inherit; font: inherit; font-size: 27px; line-height: 1; cursor: pointer; }
   .mobile-nav-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 100%; margin-top: 58px; }
@@ -429,6 +440,7 @@ a { color: inherit; text-decoration: none; }
   .contact-hero-copy p:first-child { font-size: 17px; }
   .contact-details { grid-template-columns: 1fr; gap: 38px; padding: 64px 7%; }
   .contact-details h2 { font-size: 25px; }
+  .contact-social-grid { grid-template-columns: 1fr; gap: 20px; }
   .contact-map-section { grid-template-columns: 1fr; }
   .contact-map-copy { padding: 64px 7%; }
   .contact-map-copy h2 { font-size: clamp(40px, 10.5vw, 54px); }

@@ -5,7 +5,7 @@ import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Trunk Academy | Babyhouse & Preschool in Cosmo City",
+  title: "About Us | Trunk Academy",
   description: "A warm, play-based babyhouse and preschool in Cosmo City, Roodepoort, caring for children from 3 months to 5 years.",
   icons: {
     icon: "/trunk academy logo.png",

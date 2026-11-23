@@ -207,12 +207,15 @@ export function SiteHeader() {
           <Image
             src="/trunk academy logo.png"
             alt="Trunk Academy logo"
-            width={46}
-            height={69}
+            width={68}
+            height={102}
             className="brand-logo"
             priority
           />
-          <span className="brand-name">Trunk Academy</span>
+          <span className="brand-text">
+            <span className="brand-name">Trunk Academy</span>
+            <span className="brand-slogan">The start of something beautiful</span>
+          </span>
         </Link>
         <nav aria-label="Main navigation" className="main-nav">
           {navigation.map(({ label, href }) => (
@@ -252,8 +255,8 @@ export function SiteHeader() {
               <Image
                 src="/trunk academy logo.png"
                 alt="Trunk Academy logo"
-                width={36}
-                height={54}
+                width={52}
+                height={78}
                 className="mobile-menu-logo"
               />
               <p id="mobile-menu-title">Trunk Academy</p>
@@ -274,7 +277,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="mobile-menu-footer">
-            <p>The start of something beautiful.</p>
+            <p>The start of something beautiful</p>
             <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Get in touch with us</Link>
           </div>
         </div>
