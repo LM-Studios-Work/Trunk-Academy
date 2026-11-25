@@ -26,7 +26,7 @@ const enrolmentSteps = [
 const feePolicies = [
   {
     title: "Monthly payments",
-    detail: "Pay monthly fees by EFT by the 7th of each month. Cash is not accepted for monthly fees.",
+    detail: "Fees vary depending on the selected programme. The day visit fee is due before dropping the child off. Other programmes fees are due by the 7th of each month.",
   },
   {
     title: "Sibling discount",

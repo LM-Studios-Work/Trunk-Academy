@@ -67,7 +67,7 @@ export default function Home() {
           <p className="eyebrow">Where Curious Minds Bloom</p>
           <h2>Safe spaces to<br />explore, ask<br />and discover.</h2>
           <p>At Trunk Academy, every question is welcome and every discovery is celebrated, because curious little minds grow best when they feel safe, loved and free to wonder.</p>
-          <Link className="text-link" href="/contact">Enquire about life at Trunk</Link>
+          <Link className="text-link" href="/contact">Enquire about life at Trunk Academy Babyhouse and Preschool</Link>
         </div>
         <div className="play-type" aria-hidden="true"><span>Explore.</span><span>Grow.</span><span>Thrive.</span></div>
       </section>

@@ -64,7 +64,7 @@ export function ContactPage() {
             </div>
             <div className="contact-hero-row">
               <dt>Visiting hours:</dt>
-              <dd>13h00 – 16h00 (unless an appointment has been made prior)</dd>
+              <dd>Monday to Friday (excluding public holidays) from 13h00 to 16h00, unless arranged otherwise by appointment.</dd>
             </div>
           </dl>
           <a className="button button-dark" href={whatsappLink} target="_blank" rel="noopener noreferrer">Message us now</a>
@@ -93,8 +93,8 @@ export function ContactPage() {
           <a className="contact-detail-link" href={mapLink} target="_blank" rel="noopener noreferrer">Open in Maps</a>
         </article>
         <article>
-          <p className="eyebrow">Hours</p>
-          <h2>Monday to Friday</h2>
+          <p className="eyebrow">Operating hours</p>
+          <h2>Monday to Friday (excluding public holidays and the festive break)</h2>
           <p className="contact-hours">06h30 – 17h30</p>
         </article>
         <article className="contact-social-article">

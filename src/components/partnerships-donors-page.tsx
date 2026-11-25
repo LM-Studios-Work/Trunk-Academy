@@ -124,7 +124,7 @@ export function PartnershipsDonorsPage() {
           <h3 className="donation-how-title">How to donate</h3>
           <p className="donation-how-note">We are a cashless organisation, so all donations are made by direct bank transfer.</p>
           <p className="donation-how-followup">
-            Please make an enquiry with us before donating via <a href="mailto:info@trunkacademy.org.za">info@trunkacademy.org.za</a> or WhatsApp <a href={donationEnquiryLink} target="_blank" rel="noopener noreferrer">081 351 4996</a>, and we will share our banking details directly with you.
+            Kindly enquire with us through email at <a href="mailto:info@trunkacademy.org.za">info@trunkacademy.org.za</a> or through WhatsApp on <a href={donationEnquiryLink} target="_blank" rel="noopener noreferrer">081 351 4996</a> for details on making a donation.
           </p>
           <p className="donation-how-thanks">Thank you for helping us make it the start of something beautiful.</p>
         </div>
