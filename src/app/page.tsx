@@ -52,7 +52,7 @@ export default function Home() {
 
       <section className="welcome-section" id="welcome">
         <div className="welcome-photo"><Image src={photos.friends} alt="Two preschool friends playing together" fill sizes="(max-width: 700px) 100vw, 50vw" /></div>
-        <div className="welcome-copy" id="our-home"><p className="eyebrow">Thank you for considering Trunk Academy for your little one.</p><h2>A gentle place<br />to find their feet.</h2><p>Leaving your child in someone else’s care is a big step. We understand the trust it takes, and we meet it with a warm welcome, familiar faces and days full of discovery.</p><p>Our values-led approach is rooted in a Christian ethos, while celebrating and respecting every culture and family.</p></div>
+        <div className="welcome-copy" id="our-home"><p className="eyebrow">Thank you for considering Trunk Academy for your little one</p><h2>A gentle place<br />to find their feet.</h2><p>Leaving your child in someone else’s care is a big step. We understand the trust it takes, and we meet it with a warm welcome, familiar faces and days full of discovery.</p><p>Our values-led approach is rooted in a Christian ethos, while celebrating and respecting every culture and family.</p></div>
       </section>
 
       <section className="reasons-section" id="programmes">
